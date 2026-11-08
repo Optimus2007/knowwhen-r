@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KnowWhen-R</title>
+<style>
+  :root {
+    --bg: #fbfbfa; --panel: #ffffff; --ink: #1d1d1b; --muted: #5f5e5a; --line: #e2e1dc;
+    --accent: #2a6f97; --good: #2e7d32; --bad: #b3261e; --soft: #f1f0ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161615; --panel: #1f1f1d; --ink: #ecebe6; --muted: #a8a69f; --line: #34332f;
+      --accent: #7fb8d8; --good: #81c784; --bad: #ef9a9a; --soft: #2a2927;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 6px; }
+  p.lead { color: var(--muted); margin: 0 0 24px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: end; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  select, input[type=range] { font: inherit; }
+  select { padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  input[type=range] { width: 240px; accent-color: var(--accent); }
+  .val { font-variant-numeric: tabular-nums; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin: 20px 0 8px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-size: 13px; color: var(--muted); font-weight: 600; }
+  tr.ours td { font-weight: 700; }
+  .note { font-size: 13px; color: var(--muted); }
+  button { font: inherit; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent); color: var(--bg); cursor: pointer; margin-top: 20px; }
+  button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-top: 16px; }
+  .q { font-weight: 600; font-size: 17px; }
+  .tag { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 99px; background: var(--soft); color: var(--muted); margin-left: 6px; }
+  .right { color: var(--good); font-weight: 600; }
+  .wrong { color: var(--bad); font-weight: 600; }
+  .declined { color: var(--muted); font-weight: 600; }
+  .verdict { margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: var(--soft); }
+  .scroll { overflow-x: auto; }
+  footer { margin-top: 40px; font-size: 13px; color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>KnowWhen-R</h1>
+  <p class="lead">Probes on a frozen model's activations decide whether to answer from memory, use retrieved Wikipedia passages, or abstain. This page replays recorded runs on the 3,968 test questions. Nothing is generated here, and the retrieved answer is shown for every question so you can compare. Cuts come from validation rows, so the share answered is close to the target, not exact.</p>
+
+  <div class="controls">
+    <div>
+      <label for="model">Model</label>
+      <select id="model"></select>
+    </div>
+    <div>
+      <label for="cov">Target share of questions answered: <span class="val" id="covv">70%</span></label>
+      <input id="cov" type="range" min="20" max="95" step="5" value="70">
+    </div>
+  </div>
+
+  <div class="scroll">
+    <table aria-label="Results on all test questions">
+      <thead><tr><th>System</th><th>Answered %</th><th>Wrong %</th><th>Correct %</th><th>Retrieved %</th></tr></thead>
+      <tbody id="summary"><tr><td colspan="5">Loading recorded runs…</td></tr></tbody>
+    </table>
+  </div>
+  <p class="note">Wrong % counts wrong answers over all questions, including the ones the system declined.</p>
+
+  <button id="pick" disabled>Show a random question</button>
+  <div id="trace"></div>
+
+  <footer>Code, report and limits: <a href="https://github.com/Optimus2007/knowwhen-r">github.com/Optimus2007/knowwhen-r</a>. Probes: <a href="https://huggingface.co/kungfupanda12/knowwhen-r-probes">knowwhen-r-probes</a>. Traces: <a href="https://huggingface.co/datasets/kungfupanda12/knowwhen-r-traces">knowwhen-r-traces</a>. Model outputs are from Tiny Aya Global and Aya Expanse 8B, CC BY NC 4.0.</footer>
+</main>
+<script>
+const LABEL = {"1": "right", "0": "wrong", "-1": "declined"};
+let DATA = null;
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const pct = (n, d) => (100 * n / d).toFixed(1);
+
+function decide(m, cut) {
+  const f = DATA.models[m], n = f.p0.length, out = [];
+  for (let i = 0; i < n; i++) {
+    const routed = f.p_before[i] > f.p0[i];
+    const conf = routed ? f.p_after[i] : f.p0[i];
+    const y = routed ? f.y1[i] : f.y0[i];
+    out.push({routed, conf, y, answered: conf >= cut && y !== -1});
+  }
+  return out;
+}
+
+function summary() {
+  const m = $("model").value, cov = $("cov").value;
+  $("covv").textContent = cov + "%";
+  const f = DATA.models[m], n = f.p0.length, d = decide(m, DATA.cuts[m][cov]);
+  const count = (arr, fn) => arr.reduce((a, v, i) => a + (fn(v, i) ? 1 : 0), 0);
+  const rows = [
+    ["Closed book, answer everything", pct(count(f.y0, v => v !== -1), n), pct(count(f.y0, v => v === 0), n), pct(count(f.y0, v => v === 1), n), "0.0", false],
+    ["Always retrieve, answer everything", pct(count(f.y1, v => v !== -1), n), pct(count(f.y1, v => v === 0), n), pct(count(f.y1, v => v === 1), n), "100.0", false],
+    ["KnowWhen-R", pct(count(d, v => v.answered), n), pct(count(d, v => v.answered && v.y === 0), n), pct(count(d, v => v.answered && v.y === 1), n), pct(count(d, v => v.routed), n), true],
+  ];
+  $("summary").innerHTML = rows.map(r => `<tr${r[5] ? ' class="ours"' : ""}><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join("");
+}
+
+function show() {
+  const m = $("model").value, cov = $("cov").value, f = DATA.models[m];
+  const i = Math.floor(Math.random() * f.p0.length), d = decide(m, DATA.cuts[m][cov])[i];
+  const lab = y => `<span class="${LABEL[y]}">${LABEL[y]}</span>`;
+  const gold = JSON.parse(f.gold[i]).map(esc).join(", ");
+  const answer = d.routed ? f.rag_answer[i] : f.closed_answer[i];
+  const verdict = d.answered
+    ? `Answered from ${d.routed ? "retrieved passages" : "memory"}: <strong>${esc(answer)}</strong> (${lab(d.y)})`
+    : `Abstained. Confidence ${d.conf.toFixed(2)} was below the cut. Without the probe it would have been ${lab(d.y)}.`;
+  $("trace").innerHTML = `<div class="card">
+    <div class="q">${esc(f.question[i])}<span class="tag">${esc(f.dataset[i])}</span></div>
+    <p class="note">Gold answers: ${gold}</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Step</th><th>Output</th><th>Probe</th></tr></thead>
+      <tbody>
+        <tr><td>From memory</td><td>${esc(f.closed_answer[i])} (${lab(f.y0[i])})</td><td>chance it is right: ${f.p0[i].toFixed(2)}</td></tr>
+        <tr><td>Forecast before reading passages</td><td></td><td>chance a retrieved answer is right: ${f.p_before[i].toFixed(2)}</td></tr>
+        <tr><td>With passages</td><td>${esc(f.rag_answer[i])} (${lab(f.y1[i])})</td><td>chance it is right: ${f.p_after[i].toFixed(2)}</td></tr>
+      </tbody>
+    </table></div>
+    <div class="verdict">${verdict}</div>
+  </div>`;
+}
+
+fetch("data.json").then(r => r.json()).then(j => {
+  DATA = j;
+  const models = Object.keys(j.models).sort();
+  $("model").innerHTML = models.map(m => `<option>${esc(m)}</option>`).join("");
+  $("model").value = models[models.length - 1];
+  $("model").onchange = summary; $("cov").oninput = summary;
+  $("pick").disabled = false; $("pick").onclick = show;
+  summary();
+}).catch(() => { $("summary").innerHTML = '<tr><td colspan="5">Could not load the recorded runs.</td></tr>'; });
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+ "CohereLabs/tiny-aya-global": {
+  "sha": "af89d219b53ed9b13b8a4645f9c8028973510324",
+  "files": {
+   "model-00001-of-00002.safetensors": "0590022d0efe06f12e08e1e94302f069dff404341b426f7435c6303725635fb1",
+   "model-00002-of-00002.safetensors": "2ac3809931d113785058809f27775620e0b8aec6fbc7e163c9c09c08b5f90dab"
+  }
+ },
+ "CohereLabs/aya-expanse-8b": {
+  "sha": "5062468bf9bc0c6035fd64e06274333ec127d980",
+  "files": {
+   "model-00001-of-00004.safetensors": "4caed059a6c25f86bc9c576c852438b220179a410725e8c6e02a02567bb25811",
+   "model-00002-of-00004.safetensors": "c98d47d38a411c1f71b6ef21d85890f90f8b215df49ee11679b2f21deb411ddd",
+   "model-00003-of-00004.safetensors": "d879c402bed6398a700784fade48fd3fc9941d86c621caf0973fedc54b2c8400",
+   "model-00004-of-00004.safetensors": "d0510958ff72c271230ddc0c880c49102bcd8dedc6d00ab290cffb51efe335f3"
+  }
+ }
+}

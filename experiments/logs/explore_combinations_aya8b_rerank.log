@@ -1,0 +1,247 @@
+rows 9954 1199 1199 model aya-expanse-8b-rerank
+in_domain {'closed': 'L8_28', 'rag': 'L12_20'} 128s
+without_nq {'closed': 'L12_20', 'rag': 'L12_20'} 86s
+without_triviaqa {'closed': 'L8_28', 'rag': 'L12_20'} 40s
+without_hotpotqa {'closed': 'L8_28', 'rag': 'L12_20'} 22s
+without_popqa {'closed': 'L8_28', 'rag': 'L12_20'} 14s
+fold              in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+variant                                                                                   
+single_layer          0.883             0.809       0.838          0.870             0.887
+layer_band            0.883             0.813       0.835          0.863             0.894
+stats_only            0.711             0.762       0.679          0.632             0.755
+cross_path_only       0.773             0.768       0.792          0.737             0.849
+stats_cross           0.806             0.818       0.810          0.719             0.867
+band_stats            0.883             0.844       0.835          0.843             0.889
+band_stats_cross      0.894             0.871       0.859          0.834             0.915
+all_with_delta        0.896             0.873       0.860          0.836             0.917
+fold              in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+variant                                                                                   
+single_layer          0.855             0.804       0.792          0.841             0.831
+layer_band            0.858             0.829       0.780          0.826             0.845
+stats_only            0.794             0.796       0.768          0.785             0.820
+cross_path_only       0.778             0.801       0.727          0.772             0.814
+stats_cross           0.847             0.844       0.823          0.840             0.870
+band_stats            0.857             0.840       0.815          0.841             0.852
+band_stats_cross      0.887             0.875       0.854          0.872             0.894
+all_with_delta        0.887             0.876       0.856          0.873             0.895
+target 0.5
+fold                    in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                          
+closed_logprob              0.207             0.230       0.313          0.137             0.137
+rag_logprob                 0.195             0.240       0.207          0.203             0.120
+route_all_with_delta        0.102             0.117       0.103          0.117             0.100
+route_band_stats            0.093             0.107       0.113          0.107             0.094
+route_band_stats_cross      0.103             0.113       0.100          0.120             0.090
+route_cross_path_only       0.153             0.240       0.170          0.103             0.344
+route_layer_band            0.094             0.107       0.133          0.110             0.080
+route_single_layer          0.091             0.100       0.157          0.093             0.097
+route_stats_cross           0.144             0.213       0.137          0.130             0.097
+route_stats_only            0.157             0.200       0.170          0.127             0.120
+fold                    in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                          
+closed_logprob              0.483             0.493       0.573          0.253             0.619
+rag_logprob                 0.505             0.540       0.410          0.517             0.542
+route_all_with_delta        0.516             0.447       0.363          0.510             0.706
+route_band_stats            0.513             0.410       0.353          0.493             0.722
+route_band_stats_cross      0.525             0.443       0.357          0.513             0.699
+route_cross_path_only       0.518             0.560       0.420          0.460             0.987
+route_layer_band            0.521             0.383       0.380          0.517             0.706
+route_single_layer          0.510             0.360       0.403          0.510             0.706
+route_stats_cross           0.505             0.537       0.367          0.443             0.645
+route_stats_only            0.478             0.513       0.393          0.303             0.659
+target 0.7
+fold                    in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                          
+closed_logprob              0.344             0.413       0.493          0.260             0.234
+rag_logprob                 0.301             0.340       0.370          0.307             0.184
+route_all_with_delta        0.202             0.250       0.283          0.217             0.161
+route_band_stats            0.204             0.280       0.280          0.203             0.167
+route_band_stats_cross      0.194             0.243       0.290          0.217             0.161
+route_cross_path_only       0.509             0.577       0.657          0.457             0.344
+route_layer_band            0.187             0.250       0.253          0.210             0.140
+route_single_layer          0.192             0.207       0.267          0.210             0.161
+route_stats_cross           0.269             0.323       0.280          0.230             0.187
+route_stats_only            0.279             0.323       0.330          0.203             0.201
+fold                    in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                          
+closed_logprob              0.678             0.720       0.790          0.423             0.836
+rag_logprob                 0.677             0.690       0.637          0.710             0.672
+route_all_with_delta        0.696             0.657       0.633          0.713             0.843
+route_band_stats            0.704             0.687       0.623          0.687             0.853
+route_band_stats_cross      0.691             0.647       0.640          0.723             0.843
+route_cross_path_only       0.983             0.980       0.983          0.983             0.987
+route_layer_band            0.687             0.660       0.597          0.717             0.846
+route_single_layer          0.686             0.570       0.613          0.727             0.856
+route_stats_cross           0.714             0.697       0.623          0.637             0.796
+route_stats_only            0.701             0.697       0.630          0.520             0.816
+target 0.9
+fold                    in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                          
+closed_logprob              0.503             0.553       0.623          0.487             0.321
+rag_logprob                 0.428             0.483       0.557          0.380             0.288
+route_all_with_delta        0.359             0.463       0.513          0.320             0.237
+route_band_stats            0.344             0.463       0.490          0.320             0.241
+route_band_stats_cross      0.363             0.470       0.517          0.327             0.244
+route_cross_path_only       0.509             0.577       0.657          0.457             0.344
+route_layer_band            0.346             0.483       0.533          0.337             0.237
+route_single_layer          0.359             0.460       0.523          0.330             0.251
+route_stats_cross           0.405             0.473       0.487          0.410             0.278
+route_stats_only            0.395             0.463       0.487          0.373             0.268
+fold                    in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                          
+closed_logprob              0.875             0.887       0.937          0.687             0.960
+rag_logprob                 0.881             0.877       0.877          0.890             0.876
+route_all_with_delta        0.889             0.910       0.913          0.850             0.946
+route_band_stats            0.877             0.910       0.893          0.850             0.950
+route_band_stats_cross      0.892             0.913       0.917          0.860             0.950
+route_cross_path_only       0.983             0.980       0.983          0.983             0.987
+route_layer_band            0.886             0.930       0.943          0.877             0.963
+route_single_layer          0.890             0.907       0.933          0.870             0.963
+route_stats_cross           0.904             0.883       0.877          0.907             0.953
+route_stats_only            0.883             0.873       0.840          0.837             0.950
+            fold  target        candidate         baseline    n   delta  ci_low  ci_high  p_value
+       in_domain     0.7 band_stats_cross      stats_cross 1199 -0.0751 -0.0976  -0.0525   0.0005
+       in_domain     0.7 band_stats_cross      rag_logprob 1199 -0.1068 -0.1334  -0.0801   0.0005
+       in_domain     0.7 band_stats_cross   closed_logprob 1199 -0.1493 -0.1802  -0.1193   0.0005
+       in_domain     0.7   all_with_delta band_stats_cross 1199  0.0075  0.0008   0.0142   0.0370
+       in_domain     0.7      stats_cross       stats_only 1199 -0.0100 -0.0334   0.0117   0.4083
+       in_domain     0.7       layer_band     single_layer 1199 -0.0050 -0.0200   0.0092   0.5487
+      without_nq     0.7 band_stats_cross      stats_cross  300  0.0100 -0.0433   0.0601   0.8106
+      without_nq     0.7 band_stats_cross      rag_logprob  300 -0.0800 -0.1433  -0.0133   0.0210
+      without_nq     0.7 band_stats_cross   closed_logprob  300 -0.2033 -0.2667  -0.1433   0.0005
+      without_nq     0.7   all_with_delta band_stats_cross  300 -0.0067 -0.0200   0.0067   0.6167
+      without_nq     0.7      stats_cross       stats_only  300 -0.0500 -0.1033   0.0000   0.0780
+      without_nq     0.7       layer_band     single_layer  300 -0.0133 -0.0367   0.0067   0.4013
+without_triviaqa     0.7 band_stats_cross      stats_cross  299 -0.0268 -0.0669   0.0134   0.2559
+without_triviaqa     0.7 band_stats_cross      rag_logprob  299 -0.0234 -0.0702   0.0234   0.3683
+without_triviaqa     0.7 band_stats_cross   closed_logprob  299 -0.0736 -0.1271  -0.0167   0.0120
+without_triviaqa     0.7   all_with_delta band_stats_cross  299  0.0000 -0.0134   0.0134   1.0000
+without_triviaqa     0.7      stats_cross       stats_only  299 -0.0134 -0.0468   0.0201   0.5552
+without_triviaqa     0.7       layer_band     single_layer  299 -0.0201 -0.0468   0.0067   0.2494
+without_hotpotqa     0.7 band_stats_cross      stats_cross  300 -0.0800 -0.1300  -0.0333   0.0020
+without_hotpotqa     0.7 band_stats_cross      rag_logprob  300 -0.0967 -0.1567  -0.0400   0.0030
+without_hotpotqa     0.7 band_stats_cross   closed_logprob  300 -0.1700 -0.2300  -0.1100   0.0005
+without_hotpotqa     0.7   all_with_delta band_stats_cross  300  0.0067 -0.0133   0.0267   0.7576
+without_hotpotqa     0.7      stats_cross       stats_only  300  0.0000 -0.0467   0.0500   1.0000
+without_hotpotqa     0.7       layer_band     single_layer  300  0.0433  0.0067   0.0767   0.0305
+   without_popqa     0.7 band_stats_cross      stats_cross  300 -0.0133 -0.0533   0.0267   0.6262
+   without_popqa     0.7 band_stats_cross      rag_logprob  300 -0.0900 -0.1433  -0.0433   0.0010
+   without_popqa     0.7 band_stats_cross   closed_logprob  300 -0.0433 -0.1000   0.0134   0.1784
+   without_popqa     0.7   all_with_delta band_stats_cross  300  0.0000 -0.0167   0.0133   1.0000
+   without_popqa     0.7      stats_cross       stats_only  300  0.0267 -0.0133   0.0667   0.2629
+   without_popqa     0.7       layer_band     single_layer  300  0.0000 -0.0233   0.0233   1.0000
+matched 0.5
+fold              in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                    
+all_with_delta        0.092             0.140       0.187          0.113             0.030
+band_stats            0.088             0.150       0.190          0.113             0.037
+band_stats_cross      0.093             0.137       0.190          0.117             0.033
+closed_logprob        0.219             0.237       0.263          0.313             0.094
+cross_path_only       0.153             0.213       0.657          0.457             0.097
+layer_band            0.089             0.163       0.197          0.107             0.043
+rag_logprob           0.193             0.220       0.270          0.187             0.104
+single_layer          0.087             0.167       0.200          0.093             0.043
+stats_cross           0.140             0.187       0.207          0.150             0.043
+stats_only            0.169             0.190       0.233          0.197             0.074
+matched 0.7
+fold              in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                    
+all_with_delta        0.204             0.287       0.333          0.207             0.094
+band_stats            0.201             0.290       0.337          0.213             0.084
+band_stats_cross      0.202             0.280       0.333          0.203             0.090
+closed_logprob        0.357             0.397       0.417          0.497             0.164
+cross_path_only       0.509             0.577       0.657          0.457             0.344
+layer_band            0.193             0.290       0.330          0.200             0.077
+rag_logprob           0.312             0.350       0.413          0.300             0.191
+single_layer          0.203             0.303       0.320          0.190             0.097
+stats_cross           0.259             0.327       0.333          0.263             0.120
+stats_only            0.278             0.323       0.373          0.307             0.127
+matched 0.9
+fold              in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+system                                                                                    
+all_with_delta        0.370             0.453       0.500          0.367             0.201
+band_stats            0.362             0.453       0.493          0.363             0.201
+band_stats_cross      0.370             0.460       0.500          0.363             0.204
+closed_logprob        0.525             0.567       0.593          0.680             0.278
+cross_path_only       0.509             0.577       0.657          0.457             0.344
+layer_band            0.359             0.463       0.490          0.360             0.181
+rag_logprob           0.433             0.493       0.563          0.380             0.298
+single_layer          0.367             0.453       0.487          0.360             0.194
+stats_cross           0.403             0.487       0.510          0.403             0.247
+stats_only            0.403             0.480       0.533          0.407             0.237
+            fold  target        candidate         baseline    n   delta  ci_low  ci_high  p_value
+       in_domain     0.7 band_stats_cross      stats_cross 1199 -0.0575 -0.0792  -0.0359   0.0005
+       in_domain     0.7       band_stats       stats_only 1199 -0.0767 -0.1018  -0.0517   0.0005
+       in_domain     0.7 band_stats_cross      rag_logprob 1199 -0.1101 -0.1376  -0.0834   0.0005
+       in_domain     0.7 band_stats_cross     single_layer 1199 -0.0008 -0.0167   0.0142   1.0000
+       in_domain     0.7   all_with_delta band_stats_cross 1199  0.0017 -0.0050   0.0075   0.8006
+       in_domain     0.7       layer_band     single_layer 1199 -0.0092 -0.0234   0.0050   0.2344
+       in_domain     0.7 band_stats_cross       band_stats 1199  0.0008 -0.0108   0.0125   1.0000
+      without_nq     0.7 band_stats_cross      stats_cross  300  0.0000 -0.0500   0.0500   1.0000
+      without_nq     0.7       band_stats       stats_only  300 -0.0367 -0.0867   0.0134   0.1914
+      without_nq     0.7 band_stats_cross      rag_logprob  300 -0.0800 -0.1433  -0.0133   0.0205
+      without_nq     0.7 band_stats_cross     single_layer  300  0.0133 -0.0267   0.0533   0.6387
+      without_nq     0.7   all_with_delta band_stats_cross  300  0.0000 -0.0133   0.0133   1.0000
+      without_nq     0.7       layer_band     single_layer  300  0.0100 -0.0200   0.0400   0.7141
+      without_nq     0.7 band_stats_cross       band_stats  300 -0.0033 -0.0333   0.0233   1.0000
+without_triviaqa     0.7 band_stats_cross      stats_cross  299 -0.0301 -0.0669   0.0067   0.1534
+without_triviaqa     0.7       band_stats       stats_only  299 -0.0435 -0.0803  -0.0067   0.0390
+without_triviaqa     0.7 band_stats_cross      rag_logprob  299 -0.1003 -0.1472  -0.0569   0.0005
+without_triviaqa     0.7 band_stats_cross     single_layer  299 -0.0067 -0.0334   0.0167   0.7916
+without_triviaqa     0.7   all_with_delta band_stats_cross  299  0.0033 -0.0100   0.0167   1.0000
+without_triviaqa     0.7       layer_band     single_layer  299 -0.0201 -0.0468   0.0033   0.2029
+without_triviaqa     0.7 band_stats_cross       band_stats  299  0.0067 -0.0134   0.0268   0.7631
+without_hotpotqa     0.7 band_stats_cross      stats_cross  300 -0.0467 -0.1000   0.0000   0.0960
+without_hotpotqa     0.7       band_stats       stats_only  300 -0.0333 -0.0867   0.0200   0.2849
+without_hotpotqa     0.7 band_stats_cross      rag_logprob  300 -0.0700 -0.1300  -0.0133   0.0255
+without_hotpotqa     0.7 band_stats_cross     single_layer  300 -0.0233 -0.0633   0.0167   0.3308
+without_hotpotqa     0.7   all_with_delta band_stats_cross  300  0.0067 -0.0133   0.0267   0.7616
+without_hotpotqa     0.7       layer_band     single_layer  300 -0.0133 -0.0500   0.0233   0.5807
+without_hotpotqa     0.7 band_stats_cross       band_stats  300 -0.0100 -0.0433   0.0200   0.6672
+   without_popqa     0.7 band_stats_cross      stats_cross  300 -0.0600 -0.1000  -0.0167   0.0055
+   without_popqa     0.7       band_stats       stats_only  300 -0.0933 -0.1433  -0.0433   0.0005
+   without_popqa     0.7 band_stats_cross      rag_logprob  300 -0.0967 -0.1434  -0.0499   0.0010
+   without_popqa     0.7 band_stats_cross     single_layer  300  0.0133 -0.0167   0.0401   0.5157
+   without_popqa     0.7   all_with_delta band_stats_cross  300  0.0033 -0.0133   0.0200   1.0000
+   without_popqa     0.7       layer_band     single_layer  300  0.0100 -0.0133   0.0333   0.5827
+   without_popqa     0.7 band_stats_cross       band_stats  300 -0.0100 -0.0333   0.0133   0.5412
+            fold          variant  alpha  wrong_rate  coverage  selective_accuracy  bound_held
+       in_domain band_stats_cross    0.2       0.196     0.692               0.717        True
+       in_domain band_stats_cross    0.3       0.294     0.813               0.638        True
+       in_domain band_stats_cross    0.4       0.406     0.941               0.568       False
+       in_domain      stats_cross    0.2       0.225     0.644               0.650       False
+       in_domain      stats_cross    0.3       0.332     0.807               0.588       False
+       in_domain      stats_cross    0.4       0.418     0.919               0.545       False
+      without_nq band_stats_cross    0.2       0.350     0.720               0.514       False
+      without_nq band_stats_cross    0.3       0.493     0.893               0.448       False
+      without_nq band_stats_cross    0.4       0.593     0.993               0.403       False
+      without_nq      stats_cross    0.2       0.270     0.607               0.555       False
+      without_nq      stats_cross    0.3       0.447     0.827               0.460       False
+      without_nq      stats_cross    0.4       0.570     0.967               0.410       False
+without_triviaqa band_stats_cross    0.2       0.127     0.803               0.842        True
+without_triviaqa band_stats_cross    0.3       0.174     0.863               0.798        True
+without_triviaqa band_stats_cross    0.4       0.224     0.920               0.756        True
+without_triviaqa      stats_cross    0.2       0.107     0.672               0.841        True
+without_triviaqa      stats_cross    0.3       0.181     0.786               0.770        True
+without_triviaqa      stats_cross    0.4       0.234     0.880               0.734        True
+without_hotpotqa band_stats_cross    0.2       0.323     0.743               0.565       False
+without_hotpotqa band_stats_cross    0.3       0.423     0.863               0.510       False
+without_hotpotqa band_stats_cross    0.4       0.537     0.983               0.454       False
+without_hotpotqa      stats_cross    0.2       0.317     0.680               0.534       False
+without_hotpotqa      stats_cross    0.3       0.420     0.823               0.490       False
+without_hotpotqa      stats_cross    0.4       0.523     0.937               0.441       False
+   without_popqa band_stats_cross    0.2       0.223     0.733               0.695       False
+   without_popqa band_stats_cross    0.3       0.267     0.797               0.665        True
+   without_popqa band_stats_cross    0.4       0.403     0.947               0.574       False
+   without_popqa      stats_cross    0.2       0.207     0.600               0.656       False
+   without_popqa      stats_cross    0.3       0.317     0.770               0.589       False
+   without_popqa      stats_cross    0.4       0.427     0.933               0.543       False
+            fold answer  source_prior  eval_prior  estimated_prior  ece_before  ece_after
+      without_nq closed         0.386       0.313            0.311       0.066      0.060
+      without_nq    rag         0.539       0.333            0.265       0.094      0.106
+without_triviaqa closed         0.273       0.639            0.714       0.177      0.089
+without_triviaqa    rag         0.420       0.639            0.725       0.080      0.099
+without_hotpotqa closed         0.396       0.337            0.361       0.068      0.070
+without_hotpotqa    rag         0.513       0.407            0.446       0.098      0.084
+   without_popqa closed         0.419       0.217            0.134       0.075      0.108
+   without_popqa    rag         0.493       0.537            0.531       0.098      0.084

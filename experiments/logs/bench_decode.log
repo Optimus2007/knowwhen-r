@@ -1,0 +1,27 @@
+W1105 17:16:50.496000 35409 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+torch.bfloat16 load 21.5 cache True
+torch.bfloat16 batch=1 plain: 2.82s, 0.235s per step, 0.35 q/s at 12 tokens
+torch.bfloat16 batch=1 scores: 2.85s, 0.238s per step, 0.35 q/s at 12 tokens
+torch.bfloat16 batch=1 hidden: 2.87s, 0.239s per step, 0.35 q/s at 12 tokens
+torch.bfloat16 batch=1 both: 2.82s, 0.235s per step, 0.36 q/s at 12 tokens
+torch.bfloat16 batch=8 plain: 15.96s, 1.330s per step, 0.50 q/s at 12 tokens
+torch.bfloat16 batch=8 scores: 15.88s, 1.323s per step, 0.50 q/s at 12 tokens
+torch.bfloat16 batch=8 hidden: 15.92s, 1.327s per step, 0.50 q/s at 12 tokens
+torch.bfloat16 batch=8 both: 15.96s, 1.330s per step, 0.50 q/s at 12 tokens
+torch.bfloat16 batch=16 plain: 32.76s, 2.730s per step, 0.49 q/s at 12 tokens
+torch.bfloat16 batch=16 scores: 33.36s, 2.780s per step, 0.48 q/s at 12 tokens
+torch.bfloat16 batch=16 hidden: 33.72s, 2.810s per step, 0.47 q/s at 12 tokens
+torch.bfloat16 batch=16 both: 36.69s, 3.057s per step, 0.44 q/s at 12 tokens
+torch.float16 load 30.3 cache True
+torch.float16 batch=1 plain: 2.01s, 0.167s per step, 0.50 q/s at 12 tokens
+torch.float16 batch=1 scores: 2.01s, 0.167s per step, 0.50 q/s at 12 tokens
+torch.float16 batch=1 hidden: 2.02s, 0.169s per step, 0.49 q/s at 12 tokens
+torch.float16 batch=1 both: 2.07s, 0.172s per step, 0.48 q/s at 12 tokens
+torch.float16 batch=8 plain: 10.94s, 0.911s per step, 0.73 q/s at 12 tokens
+torch.float16 batch=8 scores: 10.17s, 0.848s per step, 0.79 q/s at 12 tokens
+torch.float16 batch=8 hidden: 11.63s, 0.969s per step, 0.69 q/s at 12 tokens
+torch.float16 batch=8 both: 20.83s, 1.735s per step, 0.38 q/s at 12 tokens
+torch.float16 batch=16 plain: 41.25s, 3.438s per step, 0.39 q/s at 12 tokens
+torch.float16 batch=16 scores: 27.81s, 2.317s per step, 0.58 q/s at 12 tokens
+torch.float16 batch=16 hidden: 30.63s, 2.553s per step, 0.52 q/s at 12 tokens
+torch.float16 batch=16 both: 28.67s, 2.390s per step, 0.56 q/s at 12 tokens

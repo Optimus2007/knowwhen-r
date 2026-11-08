@@ -1,0 +1,6 @@
+16400 questions, 16400 to do
+W1105 19:56:08.460000 40204 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 81/290 [00:00<00:00, 663.42it/s]Loading weights:  51%|█████     | 148/290 [00:00<00:00, 655.58it/s]Loading weights:  75%|███████▍  | 217/290 [00:00<00:00, 500.79it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 660.61it/s]
+16/16400 0.48 q/s 2.3 tok/s eta 566 min
+/Volumes/KWenv/python312/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,0 +1,47 @@
+._*
+.DS_Store
+.venv/
+.cache/
+.tmp/
+.cache/
+data/
+artifacts/
+__pycache__/
+*.pyc
+.env
+docs/sources/papers/
+env.sparsebundle/
+docs/competitive_notes.md
+cache/
+docs/storage_audit.md
+# Doc and code backups stay local (they hold private notes); result backups are public
+experiments/previous_versions/*
+!experiments/previous_versions/2026-11-06_pre_hitfix/
+!experiments/previous_versions/2026-11-06_pre_ragbase/
+docs/private_notes.md
+.pytest_cache/
+*.aux
+*.log.tex
+reports/*.log
+docs/sources/
+*.egg-info/
+env.sh
+# Internal planning notes and scratch, kept local
+PROJECT_CONTEXT.md
+docs/hackathon_requirements.md
+docs/submission_checklist.md
+docs/schedule.md
+docs/risk_register.md
+logs/
+experiments/circuit/
+# Local only: setup noise, machine helpers and a code test
+.gitattributes
+scripts/check_loop.py
+scripts/clean_appledouble.sh
+experiments/logs/check_loop.log
+experiments/logs/install_env*.log
+experiments/logs/dl_tinyaya.log
+experiments/logs/download_data.log
+experiments/logs/*_download.log
+results/policy/dev_e2e_partial*
+submission/

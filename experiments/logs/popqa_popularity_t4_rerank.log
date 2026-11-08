@@ -1,0 +1,12 @@
+t4_rerank
+         fold  quartile    n  closed_acc  rag_acc  closed_probe  closed_stats  closed_popularity  rag_probe  rag_stats  rag_popularity
+    in_domain       all 1000       0.148    0.496         0.923         0.899              0.603      0.897      0.761           0.463
+    in_domain   q1_rare  251       0.151    0.554         0.922         0.870              0.422      0.896      0.781           0.403
+    in_domain        q2  249       0.100    0.506         0.906         0.896              0.359      0.908      0.801           0.438
+    in_domain        q3  250       0.060    0.424         0.889         0.824              0.504      0.872      0.704           0.446
+    in_domain q4_famous  250       0.280    0.500         0.925         0.917              0.785      0.906      0.751           0.601
+without_popqa       all 1000       0.148    0.496         0.888         0.896              0.603      0.851      0.758           0.463
+without_popqa   q1_rare  251       0.151    0.554         0.878         0.867              0.422      0.824      0.773           0.403
+without_popqa        q2  249       0.100    0.506         0.856         0.895              0.359      0.864      0.797           0.438
+without_popqa        q3  250       0.060    0.424         0.811         0.815              0.504      0.834      0.707           0.446
+without_popqa q4_famous  250       0.280    0.500         0.906         0.916              0.785      0.882      0.751           0.601

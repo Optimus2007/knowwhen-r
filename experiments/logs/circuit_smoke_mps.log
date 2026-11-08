@@ -1,0 +1,22 @@
+W1106 09:27:24.480000 59981 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 83/290 [00:00<00:00, 777.76it/s]Loading weights:  56%|█████▌    | 161/290 [00:00<00:00, 572.81it/s]Loading weights:  77%|███████▋  | 222/290 [00:00<00:00, 571.31it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 650.63it/s]
+Loaded pretrained model CohereLabs/tiny-aya-global into HookedTransformer
+09:29:03 • template dataset: 16/16 records kept after alignment (strategy='filter', dropped_nondiscriminative=0, dropped_misaligned=0, dropped_pad_failed=0, recommended_metric='logit_diff')
+09:29:03 • Custom task 'passage_grounding' registered (16 records, 16 paired)
+09:29:03 • ==================================================
+09:29:03 • Starting: Circuit Discovery
+09:29:03 • ==================================================
+09:29:03 • [1/4] Loading and validating configuration
+/Volumes/KWenv/src/CircuitKIT/src/circuitkit/api.py:1149: HyperparameterWarning: discovery.num_examples=16 is outside the sensible range 32 to 1024. Scores from very few examples are noisy: in CircuitKIT's IOI benchmarks the top-30% node sets of three seeds overlapped only ~0.6-0.7 (Jaccard) at 128 examples, and the EAP-IG, ACDC and CD-T papers all work with ~100 examples. Cost grows linearly, so beyond ~1000 there is little to gain.
+  config = load_and_validate_config(config)
+/Volumes/KWenv/src/CircuitKIT/src/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range <= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.
+  config = load_and_validate_config(config)
+09:29:03 ⚙ Configuration validated successfully.
+09:29:03 ⚙ Config: EAP-IG on passage_grounding task, node level, 90% sparsity
+09:29:03 • [2/4] Setting up model (model=CohereLabs/tiny-aya-global)
+09:29:03 🔧 Model: CohereLabs/tiny-aya-global (3.9B params, mps device)
+09:29:03 • [3/4] Running discovery algorithm (algorithm=eap-ig)
+09:29:03 • Starting EAP-IG discovery algorithm
+09:29:03 • Wrote EAP CSV: cache/normalized/passage_grounding_16_filter_seed0.csv (16 rows)
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [11:51<1:22:58, 711.23s/it]/Volumes/KWenv/python312/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

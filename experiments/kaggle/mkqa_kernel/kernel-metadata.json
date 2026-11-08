@@ -1,0 +1,20 @@
+{
+ "id": "optimus2005/knowwhen-mkqa",
+ "title": "KnowWhen MKQA",
+ "code_file": "run_mkqa.ipynb",
+ "language": "python",
+ "kernel_type": "notebook",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_tpu": false,
+ "enable_internet": true,
+ "machine_shape": "NvidiaTeslaT4",
+ "dataset_sources": [
+  "optimus2005/knowwhen-r-generation-bundle"
+ ],
+ "competition_sources": [],
+ "kernel_sources": [],
+ "model_sources": [
+  "cohereforai/aya-expanse/transformers/8b/5"
+ ]
+}

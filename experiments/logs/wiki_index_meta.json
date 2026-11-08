@@ -1,0 +1,7 @@
+{
+ "articles": 6407814,
+ "passages": 16843313,
+ "seconds": 555.7377760410309,
+ "shards": 41,
+ "engine": "tantivy"
+}

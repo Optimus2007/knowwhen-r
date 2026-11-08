@@ -1,0 +1,26 @@
+train 9954 val 2398 eval 3968 final=True
+in_domain {'position': 'mean', 'layer': 16, 'layer_index': 7, 'c': 0.0001, 'val_macro_auroc': 0.8508015318402836} 101s
+without_nq {'position': 'mean', 'layer': 16, 'layer_index': 7, 'c': 0.001, 'val_macro_auroc': 0.8743300415079736} 75s
+without_triviaqa {'position': 'mean', 'layer': 16, 'layer_index': 7, 'c': 0.0001, 'val_macro_auroc': 0.8435543317303197} 80s
+without_hotpotqa {'position': 'mean', 'layer': 16, 'layer_index': 7, 'c': 0.001, 'val_macro_auroc': 0.8490480960919581} 80s
+without_popqa {'position': 'mean', 'layer': 16, 'layer_index': 7, 'c': 0.0001, 'val_macro_auroc': 0.8380639865363587} 76s
+fold                   in_domain  ...  without_triviaqa
+method                            ...                  
+activation_plus_stats      0.859  ...             0.877
+activation_probe           0.852  ...             0.868
+first_entropy              0.762  ...             0.771
+mean_entropy               0.799  ...             0.827
+mean_logprob               0.781  ...             0.798
+min_logprob                0.784  ...             0.802
+token_stats_logistic       0.808  ...             0.835
+
+[7 rows x 5 columns]
+               method  macro_auroc  auroc  auprc   ece  brier  aurc
+     activation_probe        0.852  0.875  0.926 0.016  0.133 0.379
+activation_plus_stats        0.859  0.880  0.930 0.022  0.130 0.375
+ token_stats_logistic        0.808  0.815  0.893 0.039  0.166 0.433
+         mean_logprob        0.781  0.785  0.870 0.158  0.210 0.457
+          min_logprob        0.784  0.792  0.880 0.097  0.186 0.453
+         mean_entropy        0.799  0.799  0.882 0.094  0.184 0.451
+        first_entropy        0.762  0.767  0.868 0.054  0.186 0.494
+source prediction accuracy 0.954

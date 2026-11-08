@@ -1,0 +1,106 @@
+train 9954 val 1199 eval 1199 final=False
+in_domain {'p0': ('mean', 16, 0.001, 0.865), 'p_before': ('pre', 20, 0.001, 0.752), 'p_after': ('mean', 16, 0.001, 0.896)} 140s
+without_nq {'p0': ('mean', 16, 0.001, 0.889), 'p_before': ('pre', 20, 0.001, 0.764), 'p_after': ('mean', 16, 0.001, 0.905)} 219s
+without_triviaqa {'p0': ('mean', 16, 0.001, 0.87), 'p_before': ('pre', 20, 0.001, 0.772), 'p_after': ('mean', 16, 0.001, 0.891)} 203s
+without_hotpotqa {'p0': ('mean', 16, 0.001, 0.867), 'p_before': ('mean', 20, 0.001, 0.748), 'p_after': ('mean', 20, 0.001, 0.901)} 276s
+without_popqa {'p0': ('mean', 20, 0.001, 0.836), 'p_before': ('pre', 20, 0.001, 0.741), 'p_after': ('mean', 16, 0.001, 0.891)} 259s
+scored in_domain
+scored without_nq
+scored without_triviaqa
+scored without_hotpotqa
+scored without_popqa
+fold                 in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+policy                                                                                       
+abstain_all              0.000             0.000       0.000          0.000             0.000
+closed_only             -1.447            -1.590      -1.560         -1.640            -0.997
+fixed_abstain_05         0.011            -0.020       0.007         -0.007             0.054
+fixed_retrieve_05       -0.882            -1.198      -1.147         -0.709            -0.466
+oracle                   0.393             0.311       0.303          0.390             0.569
+rag_always              -0.916            -1.177      -1.180         -0.720            -0.585
+tuned_abstain            0.033            -0.007       0.007          0.007             0.060
+tuned_retrieve          -0.883            -1.181      -1.153         -0.701            -0.443
+two_cut_entropy          0.005            -0.061      -0.049          0.003             0.037
+two_cut_logprob          0.003            -0.020      -0.036         -0.005             0.021
+two_cut_probe            0.022            -0.011       0.007         -0.001             0.060
+two_cut_token_stats      0.007            -0.028      -0.035          0.020             0.037
+value                    0.053            -0.044       0.035          0.034             0.084
+value_no_after           0.036            -0.067      -0.022          0.044             0.060
+value_recalibrated         NaN            -0.008       0.013          0.012             0.068
+value_token_stats        0.018             0.003      -0.040          0.017             0.017
+             policy  utility  wrong_rate  coverage  retrieval_rate  selective_accuracy  oracle_recovered
+        closed_only   -1.447       0.816     1.000           0.000               0.184            -3.682
+         rag_always   -0.916       0.580     0.923           1.000               0.372            -2.330
+        abstain_all    0.000       0.000     0.000           0.000               0.000             0.000
+   fixed_abstain_05    0.011       0.043     0.141           0.000               0.692             0.028
+  fixed_retrieve_05   -0.882       0.575     0.928           0.859               0.381            -2.243
+      tuned_abstain    0.033       0.018     0.085           0.000               0.794             0.083
+     tuned_retrieve   -0.883       0.575     0.928           0.849               0.380            -2.247
+      two_cut_probe    0.022       0.028     0.107           0.023               0.742             0.056
+    two_cut_logprob    0.003       0.026     0.080           0.000               0.677             0.006
+    two_cut_entropy    0.005       0.036     0.113           0.000               0.681             0.013
+two_cut_token_stats    0.007       0.033     0.107           0.000               0.688             0.017
+              value    0.053       0.028     0.148           0.092               0.808             0.136
+     value_no_after    0.036       0.041     0.168           0.092               0.756             0.091
+  value_token_stats    0.018       0.012     0.053           0.000               0.778             0.045
+             oracle    0.393       0.000     0.416           0.232               1.000             1.000
+            fold candidate        baseline       metric    n   delta  ci_low  ci_high  p_value
+       in_domain     value     closed_only      utility 1199  1.5004  1.4351   1.5647   0.0005
+       in_domain     value     closed_only wrong_answer 1199 -0.7873 -0.8115  -0.7623   0.0005
+       in_domain     value   two_cut_probe      utility 1199  0.0315  0.0112   0.0520   0.0015
+       in_domain     value   two_cut_probe wrong_answer 1199  0.0008 -0.0067   0.0083   1.0000
+       in_domain     value two_cut_logprob      utility 1199  0.0509  0.0217   0.0818   0.0005
+       in_domain     value two_cut_logprob wrong_answer 1199  0.0025 -0.0092   0.0142   0.7801
+      without_nq     value     closed_only      utility  300  1.5947  1.4787   1.7060   0.0005
+      without_nq     value     closed_only wrong_answer  300 -0.8400 -0.8800  -0.7967   0.0005
+      without_nq     value   two_cut_probe      utility  300  0.0280  0.0057   0.0577   0.0160
+      without_nq     value   two_cut_probe wrong_answer  300 -0.0067 -0.0167   0.0000   0.5122
+      without_nq     value two_cut_logprob      utility  300  0.0710  0.0163   0.1270   0.0210
+      without_nq     value two_cut_logprob wrong_answer  300 -0.0233 -0.0467  -0.0033   0.0750
+without_triviaqa     value     closed_only      utility  299  1.0803  0.9244   1.2305   0.0005
+without_triviaqa     value     closed_only wrong_answer  299 -0.6589 -0.7124  -0.6020   0.0005
+without_triviaqa     value   two_cut_probe      utility  299  0.0234 -0.0127   0.0615   0.2559
+without_triviaqa     value   two_cut_probe wrong_answer  299 -0.0067 -0.0234   0.0100   0.6822
+without_triviaqa     value two_cut_logprob      utility  299  0.0625  0.0040   0.1248   0.0480
+without_triviaqa     value two_cut_logprob wrong_answer  299 -0.0201 -0.0435   0.0000   0.1114
+without_hotpotqa     value     closed_only      utility  300  1.5460  1.4230   1.6607   0.0005
+without_hotpotqa     value     closed_only wrong_answer  300 -0.8267 -0.8700  -0.7833   0.0005
+without_hotpotqa     value   two_cut_probe      utility  300 -0.0333 -0.0780   0.0070   0.1179
+without_hotpotqa     value   two_cut_probe wrong_answer  300  0.0133 -0.0033   0.0333   0.2909
+without_hotpotqa     value two_cut_logprob      utility  300 -0.0243 -0.0920   0.0493   0.5127
+without_hotpotqa     value two_cut_logprob wrong_answer  300 -0.0100 -0.0433   0.0200   0.6787
+   without_popqa     value     closed_only      utility  300  1.6743  1.5777   1.7680   0.0005
+   without_popqa     value     closed_only wrong_answer  300 -0.8500 -0.8900  -0.8100   0.0005
+   without_popqa     value   two_cut_probe      utility  300  0.0357  0.0153   0.0593   0.0020
+   without_popqa     value   two_cut_probe wrong_answer  300 -0.0033 -0.0101   0.0000   1.0000
+   without_popqa     value two_cut_logprob      utility  300  0.0390 -0.0090   0.0883   0.1189
+   without_popqa     value two_cut_logprob wrong_answer  300  0.0100 -0.0100   0.0300   0.4938
+            fold       metric   cut  retrieval_rate  value  rag_always_value
+       in_domain      utility 0.256           0.737 -0.911            -0.916
+       in_domain correct_rate 0.271           0.745  0.341             0.344
+      without_nq      utility 0.243           0.777 -1.124            -1.180
+      without_nq correct_rate 0.288           0.813  0.250             0.233
+without_triviaqa      utility 0.206           0.595 -0.521            -0.585
+without_triviaqa correct_rate 0.196           0.589  0.485             0.478
+without_hotpotqa      utility 0.231           0.707 -1.194            -1.177
+without_hotpotqa correct_rate 0.231           0.707  0.270             0.283
+   without_popqa      utility 0.219           0.717 -0.842            -0.720
+   without_popqa correct_rate 0.376           0.840  0.373             0.380
+ target_coverage                 policy  coverage  wrong_rate  correct_rate  selective_accuracy  retrieval_rate
+             0.5       cov_closed_probe     0.511       0.334         0.177               0.346           0.000
+             0.5     cov_closed_logprob     0.472       0.304         0.168               0.355           0.000
+             0.5 cov_closed_token_stats     0.474       0.303         0.171               0.361           0.000
+             0.5          cov_rag_probe     0.494       0.182         0.312               0.632           1.000
+             0.5        cov_route_probe     0.515       0.185         0.330               0.641           0.779
+             0.5  cov_route_token_stats     0.486       0.200         0.286               0.588           0.843
+             0.7       cov_closed_probe     0.684       0.501         0.183               0.267           0.000
+             0.7     cov_closed_logprob     0.665       0.486         0.178               0.269           0.000
+             0.7 cov_closed_token_stats     0.662       0.483         0.179               0.271           0.000
+             0.7          cov_rag_probe     0.691       0.355         0.335               0.486           1.000
+             0.7        cov_route_probe     0.692       0.337         0.355               0.513           0.779
+             0.7  cov_route_token_stats     0.697       0.360         0.337               0.483           0.843
+             0.9       cov_closed_probe     0.890       0.706         0.184               0.207           0.000
+             0.9     cov_closed_logprob     0.893       0.710         0.183               0.205           0.000
+             0.9 cov_closed_token_stats     0.900       0.716         0.183               0.204           0.000
+             0.9          cov_rag_probe     0.892       0.549         0.344               0.385           1.000
+             0.9        cov_route_probe     0.911       0.545         0.366               0.402           0.779
+             0.9  cov_route_token_stats     0.853       0.500         0.353               0.413           0.843

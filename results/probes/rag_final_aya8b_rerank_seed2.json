@@ -1,0 +1,41 @@
+{
+ "chosen": {
+  "in_domain": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.871923491980894
+  },
+  "without_nq": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8920502501551221
+  },
+  "without_triviaqa": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8624788746492845
+  },
+  "without_hotpotqa": {
+   "position": "mean",
+   "layer": 20,
+   "layer_index": 9,
+   "c": 0.001,
+   "val_macro_auroc": 0.8696356312884003
+  },
+  "without_popqa": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8640309533150413
+  }
+ },
+ "source_accuracy": 0.9395161290322581,
+ "final": true
+}

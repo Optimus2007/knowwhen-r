@@ -1,0 +1,18 @@
+in_domain
+without_nq
+without_triviaqa
+without_hotpotqa
+without_popqa
+fold              in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+method                                                                                    
+activation_probe      0.848             0.832       0.719          0.852             0.871
+agree_greedy          0.737             0.773       0.685          0.733             0.756
+agree_top             0.742             0.777       0.685          0.746             0.761
+p_yes                 0.603             0.588       0.582          0.635             0.607
+pre_probe             0.808             0.725       0.723          0.761             0.763
+          method    n  pooled_auroc
+       pre_probe 1199         0.840
+           p_yes 1199         0.666
+activation_probe 1199         0.874
+    agree_greedy 1197         0.757
+       agree_top 1197         0.761

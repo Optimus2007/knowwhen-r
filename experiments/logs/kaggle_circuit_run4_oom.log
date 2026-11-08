@@ -1,0 +1,837 @@
+[{"stream_name":"stderr","time":8.277375242,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.277445085,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.27745277,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.277456971,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.913114483,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.913178227,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.913184297,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.913188102,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.04856539,"data":"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/kaggle_circuit.py\n"}
+,{"stream_name":"stdout","time":36.348877665,"data":"+ ['--n', '16', '--tag', 'smoke']\n"}
+,{"stream_name":"stdout","time":36.55397855,"data":"+ ['--n', '16', '--tag', 'smoke']\n"}
+,{"stream_name":"stderr","time":73.503196424,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":88.203310411,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:14\u003c00:14, 14.70s/it]\rFetching 2 files:  50%|█████     | 1/2 [00:14\u003c00:14, 14.70s/it]\n"}
+,{"stream_name":"stderr","time":109.869614189,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:14\u003c00:14, 14.70s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.92s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.29s/it]\n"}
+,{"stream_name":"stderr","time":110.073305693,"data":"\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.92s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.29s/it]\n"}
+,{"stream_name":"stderr","time":110.073352523,"data":"\n"}
+,{"stream_name":"stderr","time":110.07336022,"data":"\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.92s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.29s/it]\n"}
+,{"stream_name":"stderr","time":110.335775495,"data":"\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":112.276871008,"data":"\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/290 [00:01\u003c09:20,  1.94s/it]\rLoading weights:  48%|████▊     | 140/290 [00:02\u003c00:01, 93.96it/s]\rLoading weights:   0%|          | 1/290 [00:01\u003c09:20,  1.94s/it]\rLoading weights:  48%|████▊     | 140/290 [00:02\u003c00:01, 93.96it/s]\n"}
+,{"stream_name":"stderr","time":113.01971105,"data":"\rLoading weights:   0%|          | 1/290 [00:01\u003c09:20,  1.94s/it]\rLoading weights:  48%|████▊     | 140/290 [00:02\u003c00:01, 93.96it/s]\rLoading weights:  70%|███████   | 203/290 [00:02\u003c00:00, 97.13it/s]\rLoading weights:  70%|███████   | 203/290 [00:02\u003c00:00, 97.13it/s]\n"}
+,{"stream_name":"stderr","time":113.342404018,"data":"\rLoading weights:  70%|███████   | 203/290 [00:02\u003c00:00, 97.13it/s]\rLoading weights:  83%|████████▎ | 242/290 [00:03\u003c00:00, 102.15it/s]\rLoading weights:  83%|████████▎ | 242/290 [00:03\u003c00:00, 102.15it/s]\n"}
+,{"stream_name":"stderr","time":113.592997566,"data":"\rLoading weights:  83%|████████▎ | 242/290 [00:03\u003c00:00, 102.15it/s]\rLoading weights:  93%|█████████▎| 271/290 [00:03\u003c00:00, 99.63it/s] \rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 83.73it/s]\n"}
+,{"stream_name":"stderr","time":113.657656726,"data":"\rLoading weights:  93%|█████████▎| 271/290 [00:03\u003c00:00, 99.63it/s] \rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 83.73it/s]\n"}
+,{"stream_name":"stderr","time":113.657715877,"data":"\n"}
+,{"stream_name":"stderr","time":113.657719856,"data":"\rLoading weights:  93%|█████████▎| 271/290 [00:03\u003c00:00, 99.63it/s] \rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 83.73it/s]\n"}
+,{"stream_name":"stdout","time":148.109622421,"data":"Loaded pretrained model CohereLabs/tiny-aya-global into HookedTransformer\n"}
+,{"stream_name":"stdout","time":148.109670247,"data":"04:57:32 • template dataset: 16/16 records kept after alignment (strategy='filter', dropped_nondiscriminative=0, dropped_misaligned=0, dropped_pad_failed=0, recommended_metric='logit_diff')\n"}
+,{"stream_name":"stdout","time":148.1107761,"data":"04:57:32 • Custom task 'passage_grounding' registered (16 records, 16 paired)\n"}
+,{"stream_name":"stdout","time":148.115457768,"data":"04:57:32 • ==================================================\n"}
+,{"stream_name":"stdout","time":148.115538739,"data":"04:57:32 • Starting: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":148.11576629,"data":"04:57:32 • ==================================================\n"}
+,{"stream_name":"stdout","time":148.11578061,"data":"04:57:32 • [1/4] Loading and validating configuration\n"}
+,{"stream_name":"stderr","time":148.121600076,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: discovery.num_examples=16 is outside the sensible range 32 to 1024. Scores from very few examples are noisy: in CircuitKIT's IOI benchmarks the top-30% node sets of three seeds overlapped only ~0.6-0.7 (Jaccard) at 128 examples, and the EAP-IG, ACDC and CD-T papers all work with ~100 examples. Cost grows linearly, so beyond ~1000 there is little to gain.\n"}
+,{"stream_name":"stderr","time":148.121622684,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stdout","time":148.121855934,"data":"04:57:32 ⚙ Configuration validated successfully.\n"}
+,{"stream_name":"stderr","time":148.121921634,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":148.121968173,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stdout","time":148.122098656,"data":"04:57:32 ⚙ Config: EAP-IG on passage_grounding task, node level, 90% sparsity\n"}
+,{"stream_name":"stdout","time":148.136457394,"data":"04:57:32 • [2/4] Setting up model (model=CohereLabs/tiny-aya-global)\n"}
+,{"stream_name":"stderr","time":148.137706256,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":148.137747542,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stdout","time":148.140525229,"data":"04:57:32 🔧 Model: CohereLabs/tiny-aya-global (3.9B params, cuda device)\n"}
+,{"stream_name":"stdout","time":148.140605163,"data":"04:57:32 • [3/4] Running discovery algorithm (algorithm=eap-ig)\n"}
+,{"stream_name":"stdout","time":148.140755485,"data":"04:57:32 • Starting EAP-IG discovery algorithm\n"}
+,{"stream_name":"stdout","time":148.142537993,"data":"04:57:32 • Wrote EAP CSV: cache/normalized/passage_grounding_16_filter_seed0.csv (16 rows)\n"}
+,{"stream_name":"stdout","time":148.314449775,"data":"Loaded pretrained model CohereLabs/tiny-aya-global into HookedTransformer\n"}
+,{"stream_name":"stdout","time":148.314483896,"data":"04:57:32 • template dataset: 16/16 records kept after alignment (strategy='filter', dropped_nondiscriminative=0, dropped_misaligned=0, dropped_pad_failed=0, recommended_metric='logit_diff')\n"}
+,{"stream_name":"stdout","time":148.314490419,"data":"04:57:32 • Custom task 'passage_grounding' registered (16 records, 16 paired)\n"}
+,{"stream_name":"stdout","time":148.314494462,"data":"04:57:32 • ==================================================\n"}
+,{"stream_name":"stdout","time":148.314498252,"data":"04:57:32 • Starting: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":148.314501757,"data":"04:57:32 • ==================================================\n"}
+,{"stream_name":"stdout","time":148.31450533,"data":"04:57:32 • [1/4] Loading and validating configuration\n"}
+,{"stream_name":"stdout","time":148.314508772,"data":"04:57:32 ⚙ Configuration validated successfully.\n"}
+,{"stream_name":"stdout","time":148.314512287,"data":"04:57:32 ⚙ Config: EAP-IG on passage_grounding task, node level, 90% sparsity\n"}
+,{"stream_name":"stdout","time":148.314515903,"data":"04:57:32 • [2/4] Setting up model (model=CohereLabs/tiny-aya-global)\n"}
+,{"stream_name":"stdout","time":148.314519762,"data":"04:57:32 🔧 Model: CohereLabs/tiny-aya-global (3.9B params, cuda device)\n"}
+,{"stream_name":"stdout","time":148.314523296,"data":"04:57:32 • [3/4] Running discovery algorithm (algorithm=eap-ig)\n"}
+,{"stream_name":"stdout","time":148.314528698,"data":"04:57:32 • Starting EAP-IG discovery algorithm\n"}
+,{"stream_name":"stdout","time":148.31453227,"data":"04:57:32 • Wrote EAP CSV: cache/normalized/passage_grounding_16_filter_seed0.csv (16 rows)\n"}
+,{"stream_name":"stderr","time":148.325040998,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: discovery.num_examples=16 is outside the sensible range 32 to 1024. Scores from very few examples are noisy: in CircuitKIT's IOI benchmarks the top-30% node sets of three seeds overlapped only ~0.6-0.7 (Jaccard) at 128 examples, and the EAP-IG, ACDC and CD-T papers all work with ~100 examples. Cost grows linearly, so beyond ~1000 there is little to gain.\n"}
+,{"stream_name":"stderr","time":148.325108061,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":148.325114535,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":148.325120417,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":148.325123986,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":148.325141865,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stderr","time":148.325145793,"data":"\n"}
+,{"stream_name":"stderr","time":148.325151503,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: discovery.num_examples=16 is outside the sensible range 32 to 1024. Scores from very few examples are noisy: in CircuitKIT's IOI benchmarks the top-30% node sets of three seeds overlapped only ~0.6-0.7 (Jaccard) at 128 examples, and the EAP-IG, ACDC and CD-T papers all work with ~100 examples. Cost grows linearly, so beyond ~1000 there is little to gain.\n"}
+,{"stream_name":"stderr","time":148.325160019,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":148.325163909,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":148.325166963,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":148.325169457,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":148.325172531,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stderr","time":157.407795033,"data":"\r  0%|          | 0/16 [00:00\u003c?, ?it/s]\r  0%|          | 0/16 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":159.707231898,"data":"\r  0%|          | 0/16 [00:00\u003c?, ?it/s]\r  0%|          | 0/16 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":159.711164222,"data":"04:57:44 ✗ Operation failed: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":159.711366326,"data":"04:57:44 ✗ Error: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":159.714506617,"data":"04:57:44 ✗ Error in discover_circuit: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":159.731681101,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":159.733138511,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":159.733166772,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.733172562,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":159.733177819,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":159.733183086,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":159.733186929,"data":"        model,\n"}
+,{"stream_name":"stderr","time":159.733191299,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":159.733194865,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":159.733199459,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":159.733203786,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.733207339,"data":"    )\n"}
+,{"stream_name":"stderr","time":159.733210785,"data":"    ^\n"}
+,{"stream_name":"stderr","time":159.734050273,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":159.734068494,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":159.734073505,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":159.734077399,"data":"    )\n"}
+,{"stream_name":"stderr","time":159.734080781,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":159.734084582,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.734088169,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":159.734091954,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":159.734095581,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":159.734099436,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.734103256,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.734107115,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":159.734111575,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.734115681,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 681, in forward\n"}
+,{"stream_name":"stderr","time":159.734120475,"data":"    logits = self.unembed(residual)  # [batch, pos, d_vocab]\n"}
+,{"stream_name":"stderr","time":159.734124275,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":159.734128124,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.734131632,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.734148617,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":159.734153643,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.734157709,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/unembed.py\", line 39, in forward\n"}
+,{"stream_name":"stderr","time":159.734162026,"data":"    result = F.linear(residual, self.W_U.T.contiguous(), self.b_U)\n"}
+,{"stream_name":"stderr","time":159.734165792,"data":"                                ~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":159.734172565,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":159.734177924,"data":"\n"}
+,{"stream_name":"stderr","time":159.73418121,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":159.734184787,"data":"\n"}
+,{"stream_name":"stderr","time":159.734188119,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":159.735016041,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":159.7350305,"data":"    main()\n"}
+,{"stream_name":"stderr","time":159.735034249,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":159.735037593,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":159.735042341,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":159.735047225,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.735208558,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":159.735215981,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":159.735220619,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":159.735225769,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.735229701,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":159.735244645,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.735249299,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":159.735253766,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":159.735288562,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":159.735308207,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":159.735314217,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":159.735319327,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":159.735323166,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":159.735326791,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":159.735330671,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stderr","time":159.911122374,"data":"\r  0%|          | 0/16 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":159.911175174,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":159.911180615,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911183627,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911186042,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":159.911188727,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":159.911191036,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":159.91119334,"data":"        model,\n"}
+,{"stream_name":"stderr","time":159.911195609,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911220554,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":159.911224972,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":159.911228956,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911232594,"data":"    )\n"}
+,{"stream_name":"stderr","time":159.911236632,"data":"    ^\n"}
+,{"stream_name":"stderr","time":159.911240434,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":159.911244846,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":159.911248254,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":159.911251983,"data":"    )\n"}
+,{"stream_name":"stderr","time":159.911255783,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911259778,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911263133,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":159.91126881,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":159.911288107,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":159.911291001,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.91129336,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911295654,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":159.911300131,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911302645,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 681, in forward\n"}
+,{"stream_name":"stderr","time":159.911305772,"data":"    logits = self.unembed(residual)  # [batch, pos, d_vocab]\n"}
+,{"stream_name":"stderr","time":159.911322463,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":159.911326915,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911330838,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911334893,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":159.911339261,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911343369,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/unembed.py\", line 39, in forward\n"}
+,{"stream_name":"stderr","time":159.911350011,"data":"    result = F.linear(residual, self.W_U.T.contiguous(), self.b_U)\n"}
+,{"stream_name":"stderr","time":159.911353359,"data":"                                ~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":159.911359158,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":159.911364738,"data":"\n"}
+,{"stream_name":"stderr","time":159.91136782,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":159.911371018,"data":"\n"}
+,{"stream_name":"stderr","time":159.9113743,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":159.911377522,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":159.911381402,"data":"    main()\n"}
+,{"stream_name":"stderr","time":159.911384849,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":159.911388144,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":159.911391771,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":159.911396204,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911405481,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":159.911409302,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":159.911413402,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911417518,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911421831,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":159.911426043,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911430259,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911435489,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":159.911441788,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":159.91144763,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":159.911450987,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":159.911454696,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":159.911457942,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":159.911461652,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":159.91146491,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stderr","time":159.911468187,"data":"\n"}
+,{"stream_name":"stderr","time":159.911471461,"data":"\r  0%|          | 0/16 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":159.911475012,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":159.911478239,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911481908,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911485006,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":159.911489132,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":159.911492402,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":159.911495809,"data":"        model,\n"}
+,{"stream_name":"stderr","time":159.91149923,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911507557,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":159.911512151,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":159.911516322,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911520316,"data":"    )\n"}
+,{"stream_name":"stderr","time":159.911523625,"data":"    ^\n"}
+,{"stream_name":"stderr","time":159.911526919,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":159.911531231,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":159.911534511,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":159.911537924,"data":"    )\n"}
+,{"stream_name":"stderr","time":159.911541544,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911545303,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911549514,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":159.911553378,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":159.911556982,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":159.911560876,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911564407,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.91156791,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":159.911571658,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911575047,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 681, in forward\n"}
+,{"stream_name":"stderr","time":159.911578874,"data":"    logits = self.unembed(residual)  # [batch, pos, d_vocab]\n"}
+,{"stream_name":"stderr","time":159.911582304,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":159.911586447,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911590697,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.911594811,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":159.911599168,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911603196,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/unembed.py\", line 39, in forward\n"}
+,{"stream_name":"stderr","time":159.911606747,"data":"    result = F.linear(residual, self.W_U.T.contiguous(), self.b_U)\n"}
+,{"stream_name":"stderr","time":159.91161036,"data":"                                ~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":159.911614162,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":159.911644317,"data":"\n"}
+,{"stream_name":"stderr","time":159.911648364,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":159.911652132,"data":"\n"}
+,{"stream_name":"stderr","time":159.911655558,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":159.911659654,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":159.911664169,"data":"    main()\n"}
+,{"stream_name":"stderr","time":159.911667309,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":159.911670967,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":159.911675678,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":159.911680882,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":159.91168552,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":159.911690005,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":159.911693521,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911697272,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911700717,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":159.911704568,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":159.911708085,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":159.911711815,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":159.911716082,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":159.911721144,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":159.911724525,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":159.91173263,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":159.911736269,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":159.911739668,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":159.911742953,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stdout","time":159.913818773,"data":"04:57:44 ✗ Operation failed: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":159.91386404,"data":"04:57:44 ✗ Error: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":159.913891679,"data":"04:57:44 ✗ Error in discover_circuit: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 734.81 MiB is free. Including non-PyTorch memory, this process has 13.84 GiB memory in use. Of the allocated memory 13.66 GiB is allocated by PyTorch, and 57.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":167.16646485,"data":"exit 1\n"}
+,{"stream_name":"stdout","time":167.16654273,"data":"+ ['--n', '128', '--tag', 'tiny_mlp', '--scope', 'mlp', '--seed', '0', '--evaluate', '64']\n"}
+,{"stream_name":"stdout","time":167.368942079,"data":"exit 1\n"}
+,{"stream_name":"stdout","time":167.368990028,"data":"+ ['--n', '128', '--tag', 'tiny_mlp', '--scope', 'mlp', '--seed', '0', '--evaluate', '64']\n"}
+,{"stream_name":"stderr","time":180.71266056,"data":"\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":182.493432572,"data":"\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/290 [00:01\u003c08:41,  1.80s/it]\rLoading weights:  46%|████▌     | 133/290 [00:01\u003c00:01, 96.35it/s]\rLoading weights:   0%|          | 1/290 [00:01\u003c08:41,  1.80s/it]\rLoading weights:  46%|████▌     | 133/290 [00:01\u003c00:01, 96.35it/s]\n"}
+,{"stream_name":"stderr","time":183.254905781,"data":"\rLoading weights:   0%|          | 1/290 [00:01\u003c08:41,  1.80s/it]\rLoading weights:  46%|████▌     | 133/290 [00:01\u003c00:01, 96.35it/s]\rLoading weights:  69%|██████▉   | 201/290 [00:02\u003c00:00, 99.88it/s]\rLoading weights:  69%|██████▉   | 201/290 [00:02\u003c00:00, 99.88it/s]\n"}
+,{"stream_name":"stderr","time":183.684630028,"data":"\rLoading weights:  69%|██████▉   | 201/290 [00:02\u003c00:00, 99.88it/s]\rLoading weights:  84%|████████▍ | 243/290 [00:02\u003c00:00, 99.25it/s]\rLoading weights:  84%|████████▍ | 243/290 [00:02\u003c00:00, 99.25it/s]\n"}
+,{"stream_name":"stderr","time":183.895864666,"data":"\rLoading weights:  84%|████████▍ | 243/290 [00:02\u003c00:00, 99.25it/s]\rLoading weights:  94%|█████████▍| 273/290 [00:03\u003c00:00, 100.98it/s]\rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 85.02it/s] \n"}
+,{"stream_name":"stderr","time":183.965829594,"data":"\rLoading weights:  94%|█████████▍| 273/290 [00:03\u003c00:00, 100.98it/s]\rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 85.02it/s] \n"}
+,{"stream_name":"stderr","time":183.965929176,"data":"\n"}
+,{"stream_name":"stderr","time":183.965936388,"data":"\rLoading weights:  94%|█████████▍| 273/290 [00:03\u003c00:00, 100.98it/s]\rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 85.02it/s] \n"}
+,{"stream_name":"stdout","time":214.638451409,"data":"Loaded pretrained model CohereLabs/tiny-aya-global into HookedTransformer\n"}
+,{"stream_name":"stdout","time":214.638648758,"data":"04:58:39 • template dataset: 128/128 records kept after alignment (strategy='filter', dropped_nondiscriminative=0, dropped_misaligned=0, dropped_pad_failed=0, recommended_metric='logit_diff')\n"}
+,{"stream_name":"stdout","time":214.639511793,"data":"04:58:39 • Custom task 'passage_grounding' registered (128 records, 128 paired)\n"}
+,{"stream_name":"stdout","time":214.646755937,"data":"04:58:39 • ==================================================\n"}
+,{"stream_name":"stdout","time":214.646785883,"data":"04:58:39 • Starting: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":214.646922569,"data":"04:58:39 • ==================================================\n"}
+,{"stream_name":"stdout","time":214.647107469,"data":"04:58:39 • [1/4] Loading and validating configuration\n"}
+,{"stream_name":"stderr","time":214.64863833,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":214.648655569,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stdout","time":214.648955502,"data":"04:58:39 ⚙ Configuration validated successfully.\n"}
+,{"stream_name":"stdout","time":214.648976982,"data":"04:58:39 ⚙ Config: EAP-IG on passage_grounding task, node level, 90% sparsity\n"}
+,{"stream_name":"stdout","time":214.653408938,"data":"04:58:39 • [2/4] Setting up model (model=CohereLabs/tiny-aya-global)\n"}
+,{"stream_name":"stderr","time":214.653886442,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":214.653914542,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stdout","time":214.656871591,"data":"04:58:39 🔧 Model: CohereLabs/tiny-aya-global (3.9B params, cuda device)\n"}
+,{"stream_name":"stdout","time":214.656985787,"data":"04:58:39 • [3/4] Running discovery algorithm (algorithm=eap-ig)\n"}
+,{"stream_name":"stdout","time":214.657188514,"data":"04:58:39 • Starting EAP-IG discovery algorithm\n"}
+,{"stream_name":"stdout","time":214.661692635,"data":"04:58:39 • Wrote EAP CSV: cache/normalized/passage_grounding_128_filter_seed0.csv (128 rows)\n"}
+,{"stream_name":"stdout","time":214.842942294,"data":"Loaded pretrained model CohereLabs/tiny-aya-global into HookedTransformer\n"}
+,{"stream_name":"stdout","time":214.842973587,"data":"04:58:39 • template dataset: 128/128 records kept after alignment (strategy='filter', dropped_nondiscriminative=0, dropped_misaligned=0, dropped_pad_failed=0, recommended_metric='logit_diff')\n"}
+,{"stream_name":"stdout","time":214.842992379,"data":"04:58:39 • Custom task 'passage_grounding' registered (128 records, 128 paired)\n"}
+,{"stream_name":"stdout","time":214.842996346,"data":"04:58:39 • ==================================================\n"}
+,{"stream_name":"stdout","time":214.843000303,"data":"04:58:39 • Starting: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":214.843003673,"data":"04:58:39 • ==================================================\n"}
+,{"stream_name":"stdout","time":214.843007372,"data":"04:58:39 • [1/4] Loading and validating configuration\n"}
+,{"stream_name":"stdout","time":214.843010676,"data":"04:58:39 ⚙ Configuration validated successfully.\n"}
+,{"stream_name":"stdout","time":214.843014303,"data":"04:58:39 ⚙ Config: EAP-IG on passage_grounding task, node level, 90% sparsity\n"}
+,{"stream_name":"stdout","time":214.843018303,"data":"04:58:39 • [2/4] Setting up model (model=CohereLabs/tiny-aya-global)\n"}
+,{"stream_name":"stdout","time":214.843022585,"data":"04:58:39 🔧 Model: CohereLabs/tiny-aya-global (3.9B params, cuda device)\n"}
+,{"stream_name":"stdout","time":214.843026201,"data":"04:58:39 • [3/4] Running discovery algorithm (algorithm=eap-ig)\n"}
+,{"stream_name":"stdout","time":214.843029569,"data":"04:58:39 • Starting EAP-IG discovery algorithm\n"}
+,{"stream_name":"stdout","time":214.843033096,"data":"04:58:39 • Wrote EAP CSV: cache/normalized/passage_grounding_128_filter_seed0.csv (128 rows)\n"}
+,{"stream_name":"stderr","time":214.851885398,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":214.85192324,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":214.851929005,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":214.851934528,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stderr","time":214.851938184,"data":"\n"}
+,{"stream_name":"stderr","time":214.851941702,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":214.85194687,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":214.851950361,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":214.851954958,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stderr","time":223.959957776,"data":"\r  0%|          | 0/128 [00:00\u003c?, ?it/s]\r  0%|          | 0/128 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":225.792818917,"data":"\r  0%|          | 0/128 [00:00\u003c?, ?it/s]\r  0%|          | 0/128 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":225.795369882,"data":"04:58:50 ✗ Operation failed: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":225.795616458,"data":"04:58:50 ✗ Error: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":225.799126023,"data":"04:58:50 ✗ Error in discover_circuit: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":225.808561798,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":225.810059872,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":225.810082416,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.810087548,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":225.81009195,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":225.810096174,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":225.810099942,"data":"        model,\n"}
+,{"stream_name":"stderr","time":225.810103318,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":225.810106533,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":225.810110679,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":225.810114686,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.810118626,"data":"    )\n"}
+,{"stream_name":"stderr","time":225.810122558,"data":"    ^\n"}
+,{"stream_name":"stderr","time":225.810126587,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":225.810187532,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":225.810192448,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":225.810196208,"data":"    )\n"}
+,{"stream_name":"stderr","time":225.810454361,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":225.810463084,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.810479603,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":225.810483866,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":225.810487466,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":225.81049128,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.810494715,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.810498233,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":225.810502077,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.810996498,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 681, in forward\n"}
+,{"stream_name":"stderr","time":225.811017587,"data":"    logits = self.unembed(residual)  # [batch, pos, d_vocab]\n"}
+,{"stream_name":"stderr","time":225.811022007,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":225.811025898,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.81102944,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.81103293,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":225.811037331,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.811041382,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/unembed.py\", line 39, in forward\n"}
+,{"stream_name":"stderr","time":225.811045815,"data":"    result = F.linear(residual, self.W_U.T.contiguous(), self.b_U)\n"}
+,{"stream_name":"stderr","time":225.811049802,"data":"                                ~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":225.811054082,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":225.811060549,"data":"\n"}
+,{"stream_name":"stderr","time":225.811064633,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":225.811068878,"data":"\n"}
+,{"stream_name":"stderr","time":225.81107268,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":225.811828332,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":225.811851083,"data":"    main()\n"}
+,{"stream_name":"stderr","time":225.811859732,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":225.81217373,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":225.812199444,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":225.812205489,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.812210479,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":225.812215164,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":225.812219176,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":225.812222973,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.8122265,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":225.812230286,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.812239534,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":225.81224347,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":225.812247202,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":225.812253608,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":225.812257794,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":225.812261324,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":225.812285364,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":225.812289505,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":225.812293423,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stderr","time":225.996454833,"data":"\r  0%|          | 0/128 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":225.996500864,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":225.996507024,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":225.996511635,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996515538,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":225.996519713,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":225.996523278,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":225.996542102,"data":"        model,\n"}
+,{"stream_name":"stderr","time":225.996545686,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996548968,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":225.996552978,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":225.996556299,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996559514,"data":"    )\n"}
+,{"stream_name":"stderr","time":225.996562636,"data":"    ^\n"}
+,{"stream_name":"stderr","time":225.996565995,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":225.996571207,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":225.996575806,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":225.996579308,"data":"    )\n"}
+,{"stream_name":"stderr","time":225.996582601,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":225.996586682,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996590957,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":225.99659523,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":225.996598886,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":225.996602919,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996606512,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996610048,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":225.996613683,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996617271,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 681, in forward\n"}
+,{"stream_name":"stderr","time":225.996621183,"data":"    logits = self.unembed(residual)  # [batch, pos, d_vocab]\n"}
+,{"stream_name":"stderr","time":225.996624885,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":225.996628896,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996632474,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996636254,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":225.996640241,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996643652,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/unembed.py\", line 39, in forward\n"}
+,{"stream_name":"stderr","time":225.996649867,"data":"    result = F.linear(residual, self.W_U.T.contiguous(), self.b_U)\n"}
+,{"stream_name":"stderr","time":225.996653463,"data":"                                ~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":225.99665971,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":225.996672923,"data":"\n"}
+,{"stream_name":"stderr","time":225.996676549,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":225.996680557,"data":"\n"}
+,{"stream_name":"stderr","time":225.996683952,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":225.996687456,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":225.996691706,"data":"    main()\n"}
+,{"stream_name":"stderr","time":225.996695617,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":225.99669913,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":225.996703162,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":225.996707261,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996711102,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":225.996714804,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":225.996718342,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":225.996722186,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.99672556,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":225.996729332,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996732776,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":225.996737098,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":225.996743938,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":225.99675502,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":225.99675872,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":225.996762433,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":225.996766724,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":225.99677042,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":225.996773958,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stderr","time":225.996777598,"data":"\n"}
+,{"stream_name":"stderr","time":225.996780938,"data":"\r  0%|          | 0/128 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":225.996784935,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":225.996788,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":225.99679174,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.99679548,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":225.996799349,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":225.996802825,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":225.996808826,"data":"        model,\n"}
+,{"stream_name":"stderr","time":225.996812543,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996816094,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":225.996819897,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":225.99682364,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996827267,"data":"    )\n"}
+,{"stream_name":"stderr","time":225.996830555,"data":"    ^\n"}
+,{"stream_name":"stderr","time":225.996857817,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":225.996861749,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":225.996865295,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":225.996868464,"data":"    )\n"}
+,{"stream_name":"stderr","time":225.996872108,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":225.996875739,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996880586,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":225.996884182,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":225.996887424,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":225.996891304,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996894932,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996898526,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":225.996902398,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996906006,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 681, in forward\n"}
+,{"stream_name":"stderr","time":225.99691459,"data":"    logits = self.unembed(residual)  # [batch, pos, d_vocab]\n"}
+,{"stream_name":"stderr","time":225.996918132,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":225.99692161,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996924894,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996928392,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":225.99693235,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.996935893,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/unembed.py\", line 39, in forward\n"}
+,{"stream_name":"stderr","time":225.996939978,"data":"    result = F.linear(residual, self.W_U.T.contiguous(), self.b_U)\n"}
+,{"stream_name":"stderr","time":225.99694366,"data":"                                ~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":225.996946952,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":225.996951755,"data":"\n"}
+,{"stream_name":"stderr","time":225.996955172,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":225.99695856,"data":"\n"}
+,{"stream_name":"stderr","time":225.996961706,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":225.996965877,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":225.996970105,"data":"    main()\n"}
+,{"stream_name":"stderr","time":225.996973751,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":225.996977592,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":225.996981356,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":225.996985574,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":225.996989798,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":225.996993876,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":225.996997606,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":225.997001677,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.997008908,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":225.997012857,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":225.997016412,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":225.997020474,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":225.99702524,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":225.997031151,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":225.997034668,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":225.997037939,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":225.99704125,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":225.997044629,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":225.99704791,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stdout","time":225.997880173,"data":"04:58:50 ✗ Operation failed: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":225.997905199,"data":"04:58:50 ✗ Error: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":225.997912346,"data":"04:58:50 ✗ Error in discover_circuit: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 608.81 MiB is free. Including non-PyTorch memory, this process has 13.96 GiB memory in use. Of the allocated memory 13.78 GiB is allocated by PyTorch, and 62.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":230.123556899,"data":"exit 1\n"}
+,{"stream_name":"stdout","time":230.123598599,"data":"+ ['--n', '128', '--tag', 'tiny_mlp', '--scope', 'mlp', '--seed', '1']\n"}
+,{"stream_name":"stdout","time":230.331898424,"data":"exit 1\n"}
+,{"stream_name":"stdout","time":230.331966671,"data":"+ ['--n', '128', '--tag', 'tiny_mlp', '--scope', 'mlp', '--seed', '1']\n"}
+,{"stream_name":"stderr","time":240.084715685,"data":"\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":241.792519964,"data":"\rLoading weights:   0%|          | 0/290 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/290 [00:01\u003c08:16,  1.72s/it]\rLoading weights:  46%|████▌     | 132/290 [00:01\u003c00:01, 100.76it/s]\rLoading weights:   0%|          | 1/290 [00:01\u003c08:16,  1.72s/it]\rLoading weights:  46%|████▌     | 132/290 [00:01\u003c00:01, 100.76it/s]\n"}
+,{"stream_name":"stderr","time":242.632987964,"data":"\rLoading weights:   0%|          | 1/290 [00:01\u003c08:16,  1.72s/it]\rLoading weights:  46%|████▌     | 132/290 [00:01\u003c00:01, 100.76it/s]\rLoading weights:  71%|███████▏  | 207/290 [00:02\u003c00:00, 101.38it/s]\rLoading weights:  71%|███████▏  | 207/290 [00:02\u003c00:00, 101.38it/s]\n"}
+,{"stream_name":"stderr","time":243.120586121,"data":"\rLoading weights:  71%|███████▏  | 207/290 [00:02\u003c00:00, 101.38it/s]\rLoading weights:  87%|████████▋ | 253/290 [00:03\u003c00:00, 99.74it/s] \rLoading weights:  87%|████████▋ | 253/290 [00:03\u003c00:00, 99.74it/s] \n"}
+,{"stream_name":"stderr","time":243.176548451,"data":"\rLoading weights:  87%|████████▋ | 253/290 [00:03\u003c00:00, 99.74it/s] \rLoading weights:  98%|█████████▊| 285/290 [00:03\u003c00:00, 103.25it/s]\rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 87.64it/s] \n"}
+,{"stream_name":"stderr","time":243.38030187,"data":"\rLoading weights:  98%|█████████▊| 285/290 [00:03\u003c00:00, 103.25it/s]\rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 87.64it/s] \n"}
+,{"stream_name":"stderr","time":243.380347414,"data":"\n"}
+,{"stream_name":"stderr","time":243.380828767,"data":"\rLoading weights:  98%|█████████▊| 285/290 [00:03\u003c00:00, 103.25it/s]\rLoading weights: 100%|██████████| 290/290 [00:03\u003c00:00, 87.64it/s] \n"}
+,{"stream_name":"stdout","time":274.033481506,"data":"Loaded pretrained model CohereLabs/tiny-aya-global into HookedTransformer\n"}
+,{"stream_name":"stdout","time":274.033520955,"data":"04:59:38 • template dataset: 128/128 records kept after alignment (strategy='filter', dropped_nondiscriminative=0, dropped_misaligned=0, dropped_pad_failed=0, recommended_metric='logit_diff')\n"}
+,{"stream_name":"stdout","time":274.034699547,"data":"04:59:38 • Custom task 'passage_grounding' registered (128 records, 128 paired)\n"}
+,{"stream_name":"stdout","time":274.039680845,"data":"04:59:38 • ==================================================\n"}
+,{"stream_name":"stdout","time":274.039859182,"data":"04:59:38 • Starting: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":274.039988637,"data":"04:59:38 • ==================================================\n"}
+,{"stream_name":"stdout","time":274.040147149,"data":"04:59:38 • [1/4] Loading and validating configuration\n"}
+,{"stream_name":"stderr","time":274.041686295,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":274.041705627,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stdout","time":274.041994579,"data":"04:59:38 ⚙ Configuration validated successfully.\n"}
+,{"stream_name":"stdout","time":274.042030327,"data":"04:59:38 ⚙ Config: EAP-IG on passage_grounding task, node level, 90% sparsity\n"}
+,{"stream_name":"stdout","time":274.045689517,"data":"04:59:38 • [2/4] Setting up model (model=CohereLabs/tiny-aya-global)\n"}
+,{"stream_name":"stderr","time":274.046168118,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":274.046184535,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stdout","time":274.048929827,"data":"04:59:38 🔧 Model: CohereLabs/tiny-aya-global (3.9B params, cuda device)\n"}
+,{"stream_name":"stdout","time":274.049034765,"data":"04:59:38 • [3/4] Running discovery algorithm (algorithm=eap-ig)\n"}
+,{"stream_name":"stdout","time":274.049215379,"data":"04:59:38 • Starting EAP-IG discovery algorithm\n"}
+,{"stream_name":"stdout","time":274.053445625,"data":"04:59:38 • Wrote EAP CSV: cache/normalized/passage_grounding_128_filter_seed1.csv (128 rows)\n"}
+,{"stream_name":"stdout","time":274.238432126,"data":"Loaded pretrained model CohereLabs/tiny-aya-global into HookedTransformer\n"}
+,{"stream_name":"stdout","time":274.238467846,"data":"04:59:38 • template dataset: 128/128 records kept after alignment (strategy='filter', dropped_nondiscriminative=0, dropped_misaligned=0, dropped_pad_failed=0, recommended_metric='logit_diff')\n"}
+,{"stream_name":"stdout","time":274.238473913,"data":"04:59:38 • Custom task 'passage_grounding' registered (128 records, 128 paired)\n"}
+,{"stream_name":"stdout","time":274.2384778,"data":"04:59:38 • ==================================================\n"}
+,{"stream_name":"stdout","time":274.238481188,"data":"04:59:38 • Starting: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":274.23848468,"data":"04:59:38 • ==================================================\n"}
+,{"stream_name":"stdout","time":274.238487994,"data":"04:59:38 • [1/4] Loading and validating configuration\n"}
+,{"stream_name":"stdout","time":274.238491592,"data":"04:59:38 ⚙ Configuration validated successfully.\n"}
+,{"stream_name":"stdout","time":274.238494916,"data":"04:59:38 ⚙ Config: EAP-IG on passage_grounding task, node level, 90% sparsity\n"}
+,{"stream_name":"stdout","time":274.238498536,"data":"04:59:38 • [2/4] Setting up model (model=CohereLabs/tiny-aya-global)\n"}
+,{"stream_name":"stdout","time":274.238501958,"data":"04:59:38 🔧 Model: CohereLabs/tiny-aya-global (3.9B params, cuda device)\n"}
+,{"stream_name":"stdout","time":274.238505624,"data":"04:59:38 • [3/4] Running discovery algorithm (algorithm=eap-ig)\n"}
+,{"stream_name":"stdout","time":274.238509085,"data":"04:59:38 • Starting EAP-IG discovery algorithm\n"}
+,{"stream_name":"stdout","time":274.238512746,"data":"04:59:38 • Wrote EAP CSV: cache/normalized/passage_grounding_128_filter_seed1.csv (128 rows)\n"}
+,{"stream_name":"stderr","time":274.243894782,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":274.243921572,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":274.243926596,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":274.243946272,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stderr","time":274.243950034,"data":"\n"}
+,{"stream_name":"stderr","time":274.243953727,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1149: HyperparameterWarning: pruning.target_sparsity=0.9 is outside the sensible range \u003c= 0.4. At 30% sparsity accuracy retention ranged from 0.65 (random) to 0.99 (Taylor) on Llama-3.2-3B and Gemma-3-4B. At 50% every selector tried collapsed (perplexity 365 to 220,000) without recovery fine-tuning.\n"}
+,{"stream_name":"stderr","time":274.243958672,"data":"  config = load_and_validate_config(config)\n"}
+,{"stream_name":"stderr","time":274.243962257,"data":"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py:1291: RuntimeWarning: Discovery algorithm 'eap-ig' may need about 54.0 GB for qkv-flag activations (batch=1, seq=8192, heads=16, d_model=2048, layers=36, dtype=torch.float16), while 7.2 GB is currently free. This estimate is advisory only; CircuitKIT will continue and let the allocator determine whether the run fits. Set CIRCUITKIT_SKIP_MEM_GUARD=1 to silence this warning.\n"}
+,{"stream_name":"stderr","time":274.243967552,"data":"  _check_qkv_flag_memory_headroom(\n"}
+,{"stream_name":"stderr","time":283.216495857,"data":"\r  0%|          | 0/128 [00:00\u003c?, ?it/s]\r  0%|          | 0/128 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":285.229151958,"data":"\r  0%|          | 0/128 [00:00\u003c?, ?it/s]\r  0%|          | 0/128 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":285.231298048,"data":"04:59:49 ✗ Operation failed: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":285.231725387,"data":"04:59:49 ✗ Error: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":285.235079064,"data":"04:59:49 ✗ Error in discover_circuit: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":285.245713094,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":285.247553367,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":285.247631397,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.247651171,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":285.247670229,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":285.247674073,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":285.247677435,"data":"        model,\n"}
+,{"stream_name":"stderr","time":285.247680854,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":285.247689903,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.247692731,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":285.247695086,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.247697427,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.247699774,"data":"    ^\n"}
+,{"stream_name":"stderr","time":285.248002411,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":285.248014257,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":285.248018108,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":285.2480218,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.248025267,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":285.248029308,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.248037713,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":285.248040876,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":285.248043279,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.248046432,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.248061645,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.248065797,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.248070067,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.248074325,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 663, in forward\n"}
+,{"stream_name":"stderr","time":285.24807868,"data":"    residual = block(\n"}
+,{"stream_name":"stderr","time":285.248082586,"data":"        residual,\n"}
+,{"stream_name":"stderr","time":285.248085974,"data":"    ...\u003c4 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.248089603,"data":"        attention_mask=attention_mask,\n"}
+,{"stream_name":"stderr","time":285.248093039,"data":"    )  # [batch, pos, d_model]\n"}
+,{"stream_name":"stderr","time":285.248096609,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.248100327,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.248103707,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.248107122,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.24811088,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.249004175,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/transformer_block.py\", line 232, in forward\n"}
+,{"stream_name":"stderr","time":285.249031624,"data":"    self.attn(\n"}
+,{"stream_name":"stderr","time":285.249037397,"data":"    ~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":285.249041306,"data":"        query_input=self.ln1(query_input)\n"}
+,{"stream_name":"stderr","time":285.249045044,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.249048936,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.249053065,"data":"        attention_mask=attention_mask,\n"}
+,{"stream_name":"stderr","time":285.24905666,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.249060118,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.249064266,"data":"    ^\n"}
+,{"stream_name":"stderr","time":285.249068328,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.249072873,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.249076227,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.249079633,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.24908341,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.249087073,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/abstract_attention.py\", line 444, in forward\n"}
+,{"stream_name":"stderr","time":285.249091093,"data":"    unhooked_result = (z * w).sum(-2)\n"}
+,{"stream_name":"stderr","time":285.249094726,"data":"                       ~~^~~\n"}
+,{"stream_name":"stderr","time":285.249099002,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":285.249105524,"data":"\n"}
+,{"stream_name":"stderr","time":285.249109317,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":285.249112945,"data":"\n"}
+,{"stream_name":"stderr","time":285.249116562,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":285.24933925,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":285.249350283,"data":"    main()\n"}
+,{"stream_name":"stderr","time":285.249354418,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":285.249358255,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":285.249362588,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":285.249367763,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.249560169,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":285.249569442,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":285.249573684,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":285.249577819,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.249581582,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":285.249585883,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.249589379,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":285.249593059,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":285.249824167,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":285.24987147,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":285.249876798,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":285.2498813,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":285.249885362,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":285.249888961,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":285.249892564,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stderr","time":285.43221206,"data":"\r  0%|          | 0/128 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":285.432280562,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":285.432286775,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":285.432290546,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432294149,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":285.43229771,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":285.432301015,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":285.432304253,"data":"        model,\n"}
+,{"stream_name":"stderr","time":285.432307565,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432310635,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.432314286,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":285.432335471,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432339237,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.432342648,"data":"    ^\n"}
+,{"stream_name":"stderr","time":285.432347109,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":285.432351382,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":285.432355177,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":285.432358721,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.432362085,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":285.432366035,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432369491,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":285.432373362,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":285.432376713,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.432381323,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432385257,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432388583,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.432392369,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432396002,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 663, in forward\n"}
+,{"stream_name":"stderr","time":285.432399819,"data":"    residual = block(\n"}
+,{"stream_name":"stderr","time":285.432403109,"data":"        residual,\n"}
+,{"stream_name":"stderr","time":285.43240642,"data":"    ...\u003c4 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.432409899,"data":"        attention_mask=attention_mask,\n"}
+,{"stream_name":"stderr","time":285.432413559,"data":"    )  # [batch, pos, d_model]\n"}
+,{"stream_name":"stderr","time":285.432417017,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.432420913,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432425183,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432428685,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.432432591,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432438595,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/transformer_block.py\", line 232, in forward\n"}
+,{"stream_name":"stderr","time":285.432442655,"data":"    self.attn(\n"}
+,{"stream_name":"stderr","time":285.43244593,"data":"    ~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":285.432449468,"data":"        query_input=self.ln1(query_input)\n"}
+,{"stream_name":"stderr","time":285.432453385,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432461419,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.432464987,"data":"        attention_mask=attention_mask,\n"}
+,{"stream_name":"stderr","time":285.432468414,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.43247183,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.432475092,"data":"    ^\n"}
+,{"stream_name":"stderr","time":285.432478366,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.432481905,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432485391,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432488827,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.432492535,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432496101,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/abstract_attention.py\", line 444, in forward\n"}
+,{"stream_name":"stderr","time":285.432500796,"data":"    unhooked_result = (z * w).sum(-2)\n"}
+,{"stream_name":"stderr","time":285.432504516,"data":"                       ~~^~~\n"}
+,{"stream_name":"stderr","time":285.432508865,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":285.432515584,"data":"\n"}
+,{"stream_name":"stderr","time":285.432519184,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":285.432522939,"data":"\n"}
+,{"stream_name":"stderr","time":285.432526324,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":285.432529618,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":285.432533443,"data":"    main()\n"}
+,{"stream_name":"stderr","time":285.432536919,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":285.432540268,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":285.432544399,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":285.432549389,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432553637,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":285.432557589,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":285.43256189,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":285.432569472,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432573027,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":285.432576353,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432579491,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":285.432583495,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":285.432590705,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":285.432596514,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":285.43259989,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":285.432603445,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":285.432606908,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":285.432610305,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":285.432613464,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stderr","time":285.432616676,"data":"\n"}
+,{"stream_name":"stderr","time":285.432620021,"data":"\r  0%|          | 0/128 [00:02\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":285.432623765,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":285.43262727,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 340, in wrapper\n"}
+,{"stream_name":"stderr","time":285.43263071,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432634993,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/api.py\", line 1475, in discover_circuit\n"}
+,{"stream_name":"stderr","time":285.432639003,"data":"    attribute_node(\n"}
+,{"stream_name":"stderr","time":285.432642363,"data":"    ~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":285.432645659,"data":"        model,\n"}
+,{"stream_name":"stderr","time":285.432648922,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432652026,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.432655695,"data":"        intervention=discovery_intervention,\n"}
+,{"stream_name":"stderr","time":285.432659242,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432662651,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.432666171,"data":"    ^\n"}
+,{"stream_name":"stderr","time":285.432669687,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1732, in attribute_node\n"}
+,{"stream_name":"stderr","time":285.432677532,"data":"    scores = get_scores_eap_ig(\n"}
+,{"stream_name":"stderr","time":285.432681163,"data":"        model, graph, dataloader, metric, steps=_steps, quiet=quiet, neuron=neuron\n"}
+,{"stream_name":"stderr","time":285.432684583,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.432687823,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/eap_utils.py\", line 53, in wrapper\n"}
+,{"stream_name":"stderr","time":285.432691417,"data":"    return fn(model, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.43269465,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/backends/eap/attribute_node.py\", line 1344, in get_scores_eap_ig\n"}
+,{"stream_name":"stderr","time":285.432698227,"data":"    logits = model(clean_tokens, attention_mask=clean_attention_mask)\n"}
+,{"stream_name":"stderr","time":285.432701686,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.432705731,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432709194,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.4327128,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.43271684,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432720384,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/HookedTransformer.py\", line 663, in forward\n"}
+,{"stream_name":"stderr","time":285.432724435,"data":"    residual = block(\n"}
+,{"stream_name":"stderr","time":285.432728152,"data":"        residual,\n"}
+,{"stream_name":"stderr","time":285.432731471,"data":"    ...\u003c4 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.43273513,"data":"        attention_mask=attention_mask,\n"}
+,{"stream_name":"stderr","time":285.432738756,"data":"    )  # [batch, pos, d_model]\n"}
+,{"stream_name":"stderr","time":285.432742387,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.432746475,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432752633,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432756268,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.432759762,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432763249,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/transformer_block.py\", line 232, in forward\n"}
+,{"stream_name":"stderr","time":285.432767251,"data":"    self.attn(\n"}
+,{"stream_name":"stderr","time":285.43277058,"data":"    ~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":285.432774006,"data":"        query_input=self.ln1(query_input)\n"}
+,{"stream_name":"stderr","time":285.432777537,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432780847,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":285.432784833,"data":"        attention_mask=attention_mask,\n"}
+,{"stream_name":"stderr","time":285.432788512,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432792199,"data":"    )\n"}
+,{"stream_name":"stderr","time":285.432795608,"data":"    ^\n"}
+,{"stream_name":"stderr","time":285.432803597,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":285.432807818,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432811317,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432814885,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":285.432818829,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432822533,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformer_lens/components/abstract_attention.py\", line 444, in forward\n"}
+,{"stream_name":"stderr","time":285.432826302,"data":"    unhooked_result = (z * w).sum(-2)\n"}
+,{"stream_name":"stderr","time":285.432829953,"data":"                       ~~^~~\n"}
+,{"stream_name":"stderr","time":285.432833784,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":285.432838812,"data":"\n"}
+,{"stream_name":"stderr","time":285.432842506,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":285.432869227,"data":"\n"}
+,{"stream_name":"stderr","time":285.432873285,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":285.432876895,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 56, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":285.432880937,"data":"    main()\n"}
+,{"stream_name":"stderr","time":285.432884297,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":285.432887657,"data":"  File \"/kaggle/input/datasets/optimus2005/knowwhen-r-circuit-bundle/scripts/circuit_discover.py\", line 46, in main\n"}
+,{"stream_name":"stderr","time":285.432891519,"data":"    pipe.discover(algorithm=\"eap-ig\", level=\"node\", sparsity=args.sparsity, n_examples=args.n, batch_size=args.batch, scope=args.scope, seed=args.seed, ig_steps=args.ig_steps)\n"}
+,{"stream_name":"stderr","time":285.432895852,"data":"    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":285.432899935,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/pipeline.py\", line 566, in discover\n"}
+,{"stream_name":"stderr","time":285.432905351,"data":"    nodes = discover_circuit(config, _model=self._ensure_model())\n"}
+,{"stream_name":"stderr","time":285.43291049,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 189, in wrapper\n"}
+,{"stream_name":"stderr","time":285.432914506,"data":"    result = debugger.profile_function(func, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.432918279,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/debug.py\", line 127, in profile_function\n"}
+,{"stream_name":"stderr","time":285.432922325,"data":"    result = func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":285.43293103,"data":"  File \"/usr/local/lib/python3.13/dist-packages/circuitkit/utils/exceptions.py\", line 358, in wrapper\n"}
+,{"stream_name":"stderr","time":285.432935162,"data":"    raise handle_exception(e, error_context) from e\n"}
+,{"stream_name":"stderr","time":285.432938795,"data":"circuitkit.utils.exceptions.CircuitKitError: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf) (Context: operation=discover_circuit, function=discover_circuit, args=({'model': {'name': 'CohereLabs/tiny-aya-global', 'precision': 'float16', 'device': 'cuda'}, 'discovery': {'algorithm': 'eap-ig', 'task': 'passage_grounding', 'level': 'node', 'batch_size': 1, 'data_p, kwargs={'_model': HookedTransformer(\n"}
+,{"stream_name":"stderr","time":285.432945334,"data":"  (embed): Embed()\n"}
+,{"stream_name":"stderr","time":285.432948987,"data":"  (hook_embed): HookPoint(name='hook_embed')\n"}
+,{"stream_name":"stderr","time":285.432952734,"data":"  (blocks): TypedModuleList(\n"}
+,{"stream_name":"stderr","time":285.432956445,"data":"    (0): TransformerBlock(\n"}
+,{"stream_name":"stderr","time":285.432960013,"data":"      (ln1): LayerNorm(\n"}
+,{"stream_name":"stderr","time":285.432963589,"data":"        (hook_scale): Hook)\n"}
+,{"stream_name":"stdout","time":285.433784401,"data":"04:59:49 ✗ Operation failed: Circuit Discovery\n"}
+,{"stream_name":"stdout","time":285.433800958,"data":"04:59:49 ✗ Error: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":285.433807079,"data":"04:59:49 ✗ Error in discover_circuit: CUDA out of memory. Tried to allocate 672.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 638.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 55.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":289.512665754,"data":"exit 1\n"}
+,{"stream_name":"stdout","time":289.536465106,"data":"exit 1\n"}
+,{"stream_name":"stderr","time":292.412711097,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":292.412773463,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":292.593493162,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":292.593545071,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":293.448664988,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":293.539444318,"data":"[NbConvertApp] Writing 33247 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":296.240901426,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":296.792967148,"data":"[NbConvertApp] Writing 304280 bytes to __results__.html\n"}
+]

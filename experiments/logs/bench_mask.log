@@ -1,0 +1,4 @@
+warm: prefill 3.41s step 0.255s
+no mask: prefill 2.41s step 0.239s
+2D padded mask: prefill 2.55s step 0.256s
+precomputed 4D dict: prefill 2.43s step 0.243s

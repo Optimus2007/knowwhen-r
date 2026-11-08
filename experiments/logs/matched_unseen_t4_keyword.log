@@ -1,0 +1,46 @@
+t4_keyword
+policy            cov_closed_logprob  cov_closed_probe  cov_closed_token_stats  cov_rag_probe  cov_route_probe  cov_route_token_stats
+fold                                                                                                                                 
+in_domain                      0.498             0.497                   0.496          0.372            0.354                  0.359
+without_hotpotqa               0.569             0.569                   0.567          0.491            0.486                  0.496
+without_nq                     0.540             0.536                   0.542          0.497            0.453                  0.455
+without_popqa                  0.553             0.556                   0.552          0.310            0.313                  0.301
+without_triviaqa               0.334             0.340                   0.335          0.216            0.211                  0.211
+policy            cov_closed_logprob  cov_closed_probe  cov_closed_token_stats  cov_rag_probe  cov_route_probe  cov_route_token_stats
+fold                                                                                                                                 
+in_domain                      0.700             0.700                   0.700          0.700            0.699                  0.678
+without_hotpotqa               0.700             0.700                   0.700          0.700            0.700                  0.700
+without_nq                     0.700             0.699                   0.700          0.700            0.699                  0.653
+without_popqa                  0.700             0.700                   0.700          0.699            0.699                  0.672
+without_triviaqa               0.699             0.699                   0.699          0.699            0.699                  0.691
+            fold  target_coverage              baseline  delta  ci_low  ci_high
+       in_domain              0.7      cov_closed_probe -0.144  -0.161   -0.125
+       in_domain              0.7         cov_rag_probe -0.018  -0.027   -0.009
+       in_domain              0.7 cov_route_token_stats -0.005  -0.020    0.009
+       in_domain              0.9      cov_closed_probe -0.148  -0.166   -0.131
+       in_domain              0.9         cov_rag_probe -0.013  -0.021   -0.005
+       in_domain              0.9 cov_route_token_stats  0.034   0.021    0.046
+      without_nq              0.7      cov_closed_probe -0.083  -0.117   -0.051
+      without_nq              0.7         cov_rag_probe -0.044  -0.070   -0.018
+      without_nq              0.7 cov_route_token_stats -0.002  -0.036    0.030
+      without_nq              0.9      cov_closed_probe -0.095  -0.126   -0.065
+      without_nq              0.9         cov_rag_probe -0.017  -0.038    0.003
+      without_nq              0.9 cov_route_token_stats  0.034   0.007    0.059
+without_triviaqa              0.7      cov_closed_probe -0.129  -0.159   -0.098
+without_triviaqa              0.7         cov_rag_probe -0.005  -0.024    0.014
+without_triviaqa              0.7 cov_route_token_stats  0.000  -0.028    0.029
+without_triviaqa              0.9      cov_closed_probe -0.139  -0.173   -0.105
+without_triviaqa              0.9         cov_rag_probe -0.012  -0.030    0.007
+without_triviaqa              0.9 cov_route_token_stats  0.012  -0.012    0.038
+without_hotpotqa              0.7      cov_closed_probe -0.083  -0.120   -0.045
+without_hotpotqa              0.7         cov_rag_probe -0.005  -0.019    0.010
+without_hotpotqa              0.7 cov_route_token_stats -0.010  -0.043    0.024
+without_hotpotqa              0.9      cov_closed_probe -0.096  -0.127   -0.063
+without_hotpotqa              0.9         cov_rag_probe -0.004  -0.014    0.007
+without_hotpotqa              0.9 cov_route_token_stats  0.000  -0.025    0.025
+   without_popqa              0.7      cov_closed_probe -0.243  -0.283   -0.203
+   without_popqa              0.7         cov_rag_probe  0.003  -0.008    0.015
+   without_popqa              0.7 cov_route_token_stats  0.012  -0.014    0.036
+   without_popqa              0.9      cov_closed_probe -0.302  -0.338   -0.264
+   without_popqa              0.9         cov_rag_probe  0.008  -0.001    0.018
+   without_popqa              0.9 cov_route_token_stats  0.047   0.028    0.065

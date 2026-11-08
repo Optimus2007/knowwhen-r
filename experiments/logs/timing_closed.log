@@ -1,0 +1,23 @@
+64 questions, 64 to do
+W1105 17:00:11.850000 35170 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  68%|██████▊   | 197/290 [00:00<00:00, 1848.12it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1773.23it/s]
+8/64 0.43 q/s 2.6 tok/s eta 2 min
+finished 150.01991033554077
+      180.43 real         4.17 user        18.82 sys
+           622510080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             -289111  page reclaims
+              425876  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  22  messages sent
+                  70  messages received
+                   0  signals received
+               14220  voluntary context switches
+               74554  involuntary context switches
+        108772230860  instructions retired
+         72042064290  cycles elapsed
+         11369219536  peak memory footprint

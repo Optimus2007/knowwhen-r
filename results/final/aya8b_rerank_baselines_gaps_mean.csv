@@ -1,0 +1,16 @@
+fold,candidate,baseline,n,delta,ci_low,ci_high,seed
+in_domain,pre_probe,p_yes,3968.0,0.1962,0.1735,0.2182,1.0
+in_domain,activation_probe,agree_top,3968.0,0.1142,0.0984,0.1298,1.0
+in_domain,activation_probe,agree_greedy,3968.0,0.1182,0.1024,0.1345,1.0
+without_nq,pre_probe,p_yes,1000.0,0.1515,0.1067,0.1964,1.0
+without_nq,activation_probe,agree_top,1000.0,0.0621,0.0271,0.097,1.0
+without_nq,activation_probe,agree_greedy,1000.0,0.0745,0.0375,0.1113,1.0
+without_triviaqa,pre_probe,p_yes,968.0,0.1716,0.1316,0.2124,1.0
+without_triviaqa,activation_probe,agree_top,968.0,0.1116,0.0836,0.1403,1.0
+without_triviaqa,activation_probe,agree_greedy,968.0,0.1114,0.0837,0.1401,1.0
+without_hotpotqa,pre_probe,p_yes,1000.0,0.1892,0.1389,0.2413,1.0
+without_hotpotqa,activation_probe,agree_top,1000.0,0.0455,0.0054,0.087,1.0
+without_hotpotqa,activation_probe,agree_greedy,1000.0,0.0376,-0.0028,0.0775,1.0
+without_popqa,pre_probe,p_yes,1000.0,0.1068,0.0634,0.1509,1.0
+without_popqa,activation_probe,agree_top,1000.0,0.0923,0.0598,0.1238,1.0
+without_popqa,activation_probe,agree_greedy,1000.0,0.1039,0.0698,0.1379,1.0

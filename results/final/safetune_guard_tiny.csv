@@ -1,0 +1,201 @@
+id,dataset,guard_score,route,answer,correct,saved_closed,saved_rag,row
+hotpotqa:5a74d7605542996c70cfae09,hotpotqa,2.938840866088867,retrieved,Amy.,False,False,False,15723
+nq:8a457a79df13,nq,2.5086510181427,retrieved,Ellie Goulding,False,False,False,1794
+hotpotqa:5a7a4e6f5542990783324f06,hotpotqa,0.8988559246063232,retrieved,United States,False,False,False,1424
+triviaqa:qz_6465,triviaqa,-0.16585016250610352,closed,"""Keeping Up with the Kardashians""",True,True,True,1467
+nq:68b3c8322ca9,nq,0.8104283809661865,retrieved,1790s,False,True,False,3537
+triviaqa:odql_7334,triviaqa,2.6949141025543213,retrieved,"Sir George Hamilton-Gordon, 4th Earl of Aberdeen.",False,False,False,9811
+triviaqa:qz_2406,triviaqa,3.1065170764923096,retrieved,Fred Astaire,True,True,True,15872
+triviaqa:sfq_3977,triviaqa,2.188610553741455,retrieved,Christine Ohuruogu.,True,False,True,4822
+triviaqa:sfq_14969,triviaqa,-0.921389102935791,closed,Diego Rivera.,True,True,True,9794
+popqa:1881398,popqa,1.7654633522033691,retrieved,Film director.,True,False,True,5086
+popqa:1776288,popqa,5.4952802658081055,retrieved,William Parker.,False,False,False,4183
+hotpotqa:5ae2e3eb554299492dc91c7a,hotpotqa,1.4049921035766602,retrieved,Horse & Hound,True,False,True,14981
+triviaqa:odql_11676,triviaqa,-0.9564437866210938,closed,New Amsterdam.,False,False,True,15180
+triviaqa:qz_3006,triviaqa,-0.9407989978790283,closed,Chlorophyll.,True,True,True,2433
+popqa:1000828,popqa,3.292198657989502,retrieved,Isaac Asimov.,False,False,False,3903
+nq:6c5f8ad69b1f,nq,1.440169334411621,retrieved,photomontage.,True,False,True,13090
+triviaqa:qb_5326,triviaqa,1.7786155939102173,retrieved,Newmarket Racecourse,True,False,True,12994
+triviaqa:odql_591,triviaqa,2.0982444286346436,retrieved,Jamie Murray,False,False,False,14418
+triviaqa:sfq_21966,triviaqa,-0.20672369003295898,closed,Traviata.,False,False,True,5988
+triviaqa:jp_1833,triviaqa,-0.6054823398590088,closed,Tim Cook,False,False,True,15367
+triviaqa:odql_8052,triviaqa,2.407668352127075,retrieved,"Abilene, Kansas.",True,False,True,9879
+popqa:1590323,popqa,3.7313952445983887,retrieved,Shiina Nagano and Minami Takayama,False,False,False,12463
+hotpotqa:5abcd34e55429965836004ba,hotpotqa,4.827859401702881,retrieved,"London, England.",False,False,False,2556
+nq:006dbf8acce1,nq,0.5589030981063843,retrieved,Lyndon B. Johnson,True,True,True,187
+nq:d4cf46795f72,nq,2.019334077835083,retrieved,1998,False,False,False,15863
+nq:23a15df0d876,nq,4.094086170196533,retrieved,"Michael Angelis (UK), Michael Brandon (US), Mark Moraghan (from series 17), George Carlin (US, series 2).",False,False,False,5825
+popqa:57582,popqa,1.9213448762893677,retrieved,Mike Judge,True,False,True,3596
+nq:75ed65ba8915,nq,2.225266218185425,retrieved,2003.,False,False,False,5773
+triviaqa:odql_2790,triviaqa,1.1245883703231812,retrieved,Amazon River.,True,True,True,7659
+hotpotqa:5a84f6a35542997175ce1f34,hotpotqa,0.345458984375,retrieved,Here Is Always Somewhere Else.,True,False,True,15475
+triviaqa:bt_2159,triviaqa,-1.55924654006958,closed,San José.,True,True,True,6238
+triviaqa:tc_272,triviaqa,1.139787197113037,retrieved,Sun Records,True,True,True,1845
+triviaqa:qg_1445,triviaqa,1.067294716835022,retrieved,packets,False,False,False,8138
+popqa:4280691,popqa,3.330266237258911,retrieved,Lin Carter,True,False,True,14587
+hotpotqa:5ac178375542994ab5c67d59,hotpotqa,0.8959043025970459,retrieved,Robert Altman.,False,False,False,12745
+nq:9c063f1542d8,nq,3.779623508453369,retrieved,Lenny Kravitz,False,False,False,11223
+triviaqa:qf_793,triviaqa,1.0132330656051636,retrieved,George III.,False,True,False,12346
+hotpotqa:5a7a04115542990198eaf047,hotpotqa,-1.0541274547576904,closed,Zeyrek Mosque.,True,True,True,14183
+nq:ac7cd123f9ac,nq,2.342912197113037,retrieved,2017,False,False,False,16373
+triviaqa:qw_9266,triviaqa,-3.017247438430786,closed,Netherlands.,True,True,True,3207
+hotpotqa:5a8b856655429949d91db5c7,hotpotqa,1.8986632823944092,retrieved,Art dealer.,False,False,False,14685
+popqa:6084467,popqa,5.510977745056152,retrieved,Jia Zhangke,True,False,True,12922
+hotpotqa:5a802bfd554299485f59857d,hotpotqa,2.901175022125244,retrieved,Cloud Atlas,True,False,True,8783
+popqa:2269961,popqa,5.5944013595581055,retrieved,Raj Kapoor and Ram Gopal Varma.,True,False,True,11683
+triviaqa:sfq_9576,triviaqa,2.1266181468963623,retrieved,Not specified.,False,False,False,4971
+hotpotqa:5ae6c43f55429908198fa6b9,hotpotqa,1.9428987503051758,retrieved,1948,True,False,True,1337
+nq:f1fe83d2c9bd,nq,0.06428647041320801,retrieved,Aryan,False,False,False,16078
+hotpotqa:5a8831c85542997e5c09a59f,hotpotqa,3.037205696105957,retrieved,Little Me.,False,False,False,13997
+triviaqa:bb_1781,triviaqa,-0.7203197479248047,closed,National leadership.,True,True,True,13303
+popqa:1599950,popqa,5.329702377319336,retrieved,Robert Lord,False,False,False,4992
+triviaqa:bb_5781,triviaqa,0.1326758861541748,retrieved,Plot.,True,True,True,15970
+triviaqa:sfq_11662,triviaqa,2.0979464054107666,retrieved,Royal York.,False,False,False,11785
+nq:3cc8cb20346d,nq,0.046504974365234375,retrieved,Varuna,False,True,False,9078
+nq:0ca01c672af7,nq,4.849186897277832,retrieved,Alan Bates,False,False,False,8119
+hotpotqa:5a80005f5542994857a7688b,hotpotqa,1.0516414642333984,retrieved,Portland Rum Riot.,True,False,True,14500
+popqa:1229624,popqa,0.017750024795532227,retrieved,Australia.,False,False,False,10369
+popqa:550827,popqa,3.346891403198242,retrieved,Adolph Zukor.,False,False,False,15
+popqa:6316925,popqa,2.9036436080932617,retrieved,Creusa,False,False,False,2511
+popqa:4532127,popqa,2.419004440307617,retrieved,Literature.,False,False,False,1015
+hotpotqa:5ac0836c554299294b21900c,hotpotqa,1.214264154434204,retrieved,Kathmandu.,True,False,True,13514
+nq:fd17542f52c4,nq,2.209162473678589,retrieved,No NBA players have officially recorded a quadruple double.,False,False,False,6240
+hotpotqa:5ab2f4625542991669774152,hotpotqa,2.5915324687957764,retrieved,"""Pluto""",False,False,False,5236
+nq:3c59512e34c9,nq,-0.4483323097229004,closed,Logo.,True,True,False,10992
+triviaqa:dpql_1200,triviaqa,2.9876694679260254,retrieved,The Boxer Rebellion.,True,False,True,15184
+popqa:1782282,popqa,6.058032035827637,retrieved,Abu Hena Mostofa Kamal.,False,False,False,238
+nq:ba7ece07f931,nq,1.3269975185394287,retrieved,Within 10 minutes.,False,False,False,443
+nq:4f19897bc2a8,nq,4.148735046386719,retrieved,"Majestic Star Casino, LLC",False,False,False,6624
+nq:f3fdc04b9cd8,nq,2.014993190765381,retrieved,Leo Tolstoy,True,False,True,4184
+popqa:2187915,popqa,-0.773383617401123,closed,Fighting game.,True,True,False,5673
+triviaqa:tc_2196,triviaqa,2.46706223487854,retrieved,"The Ordettes, The Supremes, and Patti LaBelle & The Bluebells.",True,True,True,765
+triviaqa:odql_4539,triviaqa,2.4328081607818604,retrieved,Martina Navratilova.,True,True,True,6403
+nq:f7d77b0a8d8d,nq,2.1076793670654297,retrieved,1984,False,False,False,6812
+triviaqa:odql_1047,triviaqa,1.0381872653961182,retrieved,William Walton,True,False,True,16007
+popqa:2899499,popqa,2.038435459136963,retrieved,Experimental theatre.,False,False,False,6731
+hotpotqa:5abeacf55542990832d3a0a5,hotpotqa,2.110365152359009,retrieved,Heavy metal,False,False,False,10495
+nq:c21d4f109b77,nq,4.51461935043335,retrieved,Jack Pearson,True,False,True,8725
+triviaqa:jp_4157,triviaqa,2.7271995544433594,retrieved,Cookie dough.,False,False,False,8909
+triviaqa:qw_1065,triviaqa,2.5751752853393555,retrieved,HMP Slade,True,False,True,1564
+nq:f69693d811f5,nq,1.4301055669784546,retrieved,William Rosecrans and Braxton Bragg.,True,False,True,16240
+popqa:5962987,popqa,5.255838394165039,retrieved,Susan Hill.,True,False,True,2322
+hotpotqa:5a7a308f5542996c55b2dd35,hotpotqa,1.547742486000061,retrieved,Everton,True,False,True,15185
+popqa:3207197,popqa,0.1356288194656372,retrieved,John D. Rockefeller Jr.,False,False,False,4556
+hotpotqa:5ae0fcb855429945ae959492,hotpotqa,2.885284900665283,retrieved,Anna Kournikova,True,False,True,14663
+hotpotqa:5ae7e7a25542993210983fb4,hotpotqa,2.598804235458374,retrieved,1952,False,False,False,13990
+triviaqa:bb_4455,triviaqa,-1.4402730464935303,closed,Sumatra.,False,False,True,2350
+triviaqa:odql_7842,triviaqa,4.402651786804199,retrieved,Duckface,True,False,True,2965
+popqa:3274284,popqa,4.337329864501953,retrieved,"Vernor Vinge, James M. Cain, and Cecelia Ahern.",True,False,True,11416
+nq:23284c457959,nq,2.4573862552642822,retrieved,Robert Solow and Trevor Swan,False,False,False,3398
+hotpotqa:5a73fba85542993a88ae2ed8,hotpotqa,3.7286133766174316,retrieved,Myles Horton.,True,False,True,10484
+nq:09ea869586a3,nq,1.4042116403579712,retrieved,$0.11,False,False,False,12976
+nq:c278f913f1f3,nq,3.8737785816192627,retrieved,Narendra Modi,False,False,False,6571
+nq:1a871e796e52,nq,1.623565435409546,retrieved,Sicily,False,False,False,12759
+nq:e74451119dc1,nq,2.406871795654297,retrieved,Ben Murphy,False,False,False,1667
+hotpotqa:5ac3f8e6554299204fd21ee6,hotpotqa,-1.3826491832733154,closed,Cumbria.,False,False,False,3975
+nq:6280495cb836,nq,4.25694465637207,retrieved,Mason Greyback,True,False,True,822
+hotpotqa:5ae76bb05542991e8301cc95,hotpotqa,2.498873710632324,retrieved,Michael Phelps.,True,True,True,13609
+triviaqa:qf_453,triviaqa,-0.47059035301208496,closed,Anubis,True,True,True,15357
+nq:4031213c8289,nq,4.9289751052856445,retrieved,Jana,False,False,False,14099
+triviaqa:sfq_14744,triviaqa,0.7777942419052124,retrieved,Bradford.,True,False,True,13268
+hotpotqa:5a879f485542996e4f308888,hotpotqa,3.6174979209899902,retrieved,Viviana Zelizer,False,False,False,4863
+triviaqa:sfq_8428,triviaqa,-1.318004846572876,closed,Sweden.,True,False,True,9642
+hotpotqa:5ae30dbe5542991a06ce9924,hotpotqa,2.159703493118286,retrieved,Jal tarang,False,False,False,14621
+triviaqa:qg_3495,triviaqa,-1.1702055931091309,closed,Acetylsalicylic acid.,True,True,False,10976
+triviaqa:bt_1743,triviaqa,1.847301959991455,retrieved,preaching bands,False,False,False,12899
+popqa:782594,popqa,4.623296737670898,retrieved,William Parker,False,False,False,3315
+hotpotqa:5ae0dd875542993d6555ec70,hotpotqa,2.062455177307129,retrieved,Battle of Mogadishu.,True,False,True,1048
+triviaqa:sfq_10995,triviaqa,1.1191297769546509,retrieved,Rob Burrow,False,False,False,8716
+popqa:1917895,popqa,0.8788759708404541,retrieved,Football,True,False,True,4830
+nq:91b5f1551c8f,nq,4.663967132568359,retrieved,Emma Thompson,False,False,False,9908
+hotpotqa:5abed5a85542997719eab5e1,hotpotqa,1.5711662769317627,retrieved,North Lincolnshire,True,False,True,11755
+popqa:5210885,popqa,3.65641450881958,retrieved,"Country, Folk, Rock",False,True,False,13633
+popqa:1759291,popqa,1.714576005935669,retrieved,Death metal.,True,False,True,2559
+hotpotqa:5ae663ab55429908198fa5bb,hotpotqa,3.533926486968994,retrieved,1998,False,False,False,13397
+popqa:5196222,popqa,5.103860855102539,retrieved,"Evan Marshall, Jessica Page Morrell, Peter Selgin, Bill Nichols, Mihir Bellare, Phillip Rogaway, David Wagner.",False,False,False,5964
+hotpotqa:5ac50ed05542994611c8b349,hotpotqa,2.2435550689697266,retrieved,The National September 11 Memorial & Museum.,False,False,False,14330
+popqa:1909192,popqa,2.7006359100341797,retrieved,Left Lane Capital.,False,False,False,15348
+hotpotqa:5ab345db55429969a97a8122,hotpotqa,2.898329019546509,retrieved,California.,False,False,False,2840
+nq:5a7bc9257111,nq,2.5228588581085205,retrieved,Two.,False,False,False,4959
+triviaqa:odql_6725,triviaqa,-0.5659854412078857,closed,River Ouse.,False,False,True,12084
+popqa:1503850,popqa,5.04742431640625,retrieved,Paul Irizarry Suau,False,False,False,13832
+popqa:6438537,popqa,5.035782814025879,retrieved,Marco Bellocchio,False,False,False,4831
+nq:e6291fad3ed8,nq,2.9516873359680176,retrieved,Edward III,False,False,False,13383
+triviaqa:tc_2713,triviaqa,3.594095468521118,retrieved,P.T. Barnum's circus.,True,False,True,11726
+popqa:5336010,popqa,4.726509094238281,retrieved,Barbara Peeters and Barbara Gaines.,False,False,False,14802
+triviaqa:qf_2831,triviaqa,-0.14606952667236328,closed,Decline and Fall of the Roman Empire.,True,True,True,13797
+hotpotqa:5addd7d25542997dc790704d,hotpotqa,0.2020179033279419,retrieved,Itzpapalotl.,False,False,False,4886
+hotpotqa:5ae1201b5542997b2ef7d0e8,hotpotqa,1.3241519927978516,retrieved,Three.,True,True,True,3256
+triviaqa:jp_3191,triviaqa,1.975982904434204,retrieved,Heaven.,True,False,True,13619
+triviaqa:sfq_17074,triviaqa,1.5951917171478271,retrieved,Ben Whishaw,True,False,True,7273
+hotpotqa:5ae390755542994393b9e704,hotpotqa,3.465785264968872,retrieved,"March 14, 1992.",False,False,False,9388
+triviaqa:sfq_16022,triviaqa,0.3084317445755005,retrieved,Bonny fish.,True,True,True,8924
+nq:b3f30db50cc5,nq,1.5895566940307617,retrieved,Radiocarbon dating.,False,False,False,10933
+hotpotqa:5ab841785542990e739ec89a,hotpotqa,2.621814012527466,retrieved,Nirvana.,False,False,False,13851
+hotpotqa:5ae2966f554299495565dad8,hotpotqa,3.4559292793273926,retrieved,Not specified.,False,False,False,10094
+triviaqa:sfq_23753,triviaqa,1.395522117614746,retrieved,Ernő,False,False,False,2250
+hotpotqa:5adc2cc2554299438c868d68,hotpotqa,2.7310080528259277,retrieved,singer.,False,False,False,15841
+popqa:419966,popqa,3.120555877685547,retrieved,Mahesh Bhatt,True,False,True,14410
+popqa:1686002,popqa,0.13101744651794434,retrieved,Nova Scotia,True,True,True,12715
+popqa:2697468,popqa,2.6892852783203125,retrieved,Anna Rossi-Doria,False,False,False,14110
+hotpotqa:5adfb4a755429942ec259b03,hotpotqa,3.186393976211548,retrieved,Third Eye,False,False,False,4448
+popqa:210027,popqa,5.395504951477051,retrieved,Joe Barton.,False,False,False,6033
+triviaqa:qb_10299,triviaqa,0.7349896430969238,retrieved,Australia.,True,False,True,3629
+triviaqa:wh_567,triviaqa,0.764876127243042,retrieved,Len Hutton,True,False,True,13701
+nq:578ecb83c4a1,nq,3.9099936485290527,retrieved,2017,False,False,False,11843
+nq:42189b758b99,nq,3.76125168800354,retrieved,2003,False,False,False,8925
+hotpotqa:5a8d55e655429941ae14dfa9,hotpotqa,1.2411398887634277,retrieved,Nashville Predators.,False,False,False,5887
+triviaqa:qw_9696,triviaqa,-0.7443804740905762,closed,Ampere,True,True,True,8935
+popqa:946136,popqa,2.1572444438934326,retrieved,Gaston Méliès,False,False,False,2910
+triviaqa:qb_4069,triviaqa,-0.24088835716247559,closed,Atacama Desert.,True,True,True,970
+popqa:5284746,popqa,2.3549399375915527,retrieved,Yu Yagami,True,False,True,8036
+hotpotqa:5ae537e05542992663a4f178,hotpotqa,3.372274398803711,retrieved,Todd Haynes,False,False,False,3759
+popqa:2606277,popqa,-0.340224027633667,closed,Science fiction.,True,True,False,4601
+hotpotqa:5a88feea5542993b751ca8e5,hotpotqa,3.37621808052063,retrieved,The NCAA Men's Division I Basketball Tournament has 67 rounds.,False,False,False,11404
+popqa:4126024,popqa,2.7485671043395996,retrieved,punk,True,False,True,4653
+hotpotqa:5aba98b155429955dce3ee9a,hotpotqa,-0.3625304698944092,closed,Singapore.,True,True,True,6517
+nq:8c280f588021,nq,1.2564233541488647,retrieved,Odoacer,True,True,True,16309
+nq:d09cb9cf73eb,nq,4.773067474365234,retrieved,answers: Lockhart,False,False,False,5936
+triviaqa:sfq_1808,triviaqa,1.425007939338684,retrieved,Paul Whiteman,True,False,True,1435
+hotpotqa:5add458a5542990dbb2f7e13,hotpotqa,3.026439666748047,retrieved,John Law.,False,False,False,6774
+popqa:5119986,popqa,3.906228542327881,retrieved,"Philadelphia, Pennsylvania.",True,False,True,2531
+hotpotqa:5adc7ae755429944faac24e2,hotpotqa,3.7195944786071777,retrieved,Fiat Chrysler Automobiles,True,False,True,1417
+nq:9d8f9b7ab161,nq,1.1804043054580688,retrieved,Liverpool.,False,False,False,14720
+triviaqa:bt_924,triviaqa,3.029493808746338,retrieved,White Hart Lane,True,False,True,6759
+nq:1a5c3641d858,nq,2.7274889945983887,retrieved,"January 26, 2018.",True,False,True,10894
+nq:46aec7be206c,nq,1.217482566833496,retrieved,United States.,False,True,False,14976
+triviaqa:dpql_6299,triviaqa,-0.0692589282989502,closed,Silk.,True,True,True,7733
+nq:c1fd3d486532,nq,3.789487838745117,retrieved,Bonnie Hunt,True,False,True,3605
+triviaqa:qg_3328,triviaqa,0.643937349319458,retrieved,Billie Jean King.,True,True,True,8495
+nq:45a109d7690c,nq,0.8842103481292725,retrieved,hardwood,False,False,False,2557
+hotpotqa:5a7e928355429934daa2fc34,hotpotqa,3.222869396209717,retrieved,Beetlejuice 2,False,False,False,8187
+popqa:4102417,popqa,3.3054330348968506,retrieved,"Funk, R&B, and Soul.",False,False,False,3079
+hotpotqa:5a84c3e25542994c784dda30,hotpotqa,2.2370426654815674,retrieved,2000,False,False,False,3584
+hotpotqa:5adce0965542992c1e3a244e,hotpotqa,1.1261509656906128,retrieved,Pizza Corner.,True,True,True,6589
+popqa:2370611,popqa,-0.8517346382141113,closed,New South Wales.,True,True,True,112
+popqa:410908,popqa,3.644493579864502,retrieved,Hywel Teifi Edwards.,True,False,True,2618
+nq:8d8b805f6ce4,nq,0.9525442123413086,retrieved,Nevada.,True,True,True,2849
+popqa:3834239,popqa,3.7102322578430176,retrieved,"Mackay, Queensland.",True,False,True,5024
+popqa:6309605,popqa,1.4170031547546387,retrieved,Yining.,False,False,False,5253
+nq:480d157fcaf7,nq,3.3617732524871826,retrieved,1988,False,False,False,9838
+hotpotqa:5a90bbc055429916514e753c,hotpotqa,4.615119934082031,retrieved,New York City.,False,False,False,4711
+hotpotqa:5ac39b46554299657fa290fc,hotpotqa,1.296755313873291,retrieved,First season without Marc-Andre Fleury.,False,False,False,1476
+popqa:281954,popqa,4.463477611541748,retrieved,Walter Braithwaite or Robert Wells.,False,False,False,12326
+triviaqa:jp_526,triviaqa,0.13295650482177734,retrieved,The Little Mermaid,True,True,True,8397
+nq:2fd216170a06,nq,3.5796091556549072,retrieved,Eminem,True,True,True,2675
+hotpotqa:5add8da65542992200553b53,hotpotqa,0.18768906593322754,retrieved,Protected.,False,False,False,12679
+triviaqa:sfq_13159,triviaqa,1.2166762351989746,retrieved,Tom Hanks,True,True,True,6895
+nq:583ec91306df,nq,3.2291932106018066,retrieved,Armaan Khan,False,True,False,4251
+nq:71416509077a,nq,3.169741630554199,retrieved,"October 6, 2020.",False,False,False,13330
+hotpotqa:5ab98085554299131ca4234d,hotpotqa,0.37832021713256836,retrieved,American,True,True,True,1382
+triviaqa:qw_7988,triviaqa,0.7426520586013794,retrieved,boxing,True,False,True,366
+popqa:4570888,popqa,1.8416690826416016,retrieved,Roman Catholic,False,False,False,8920
+nq:958b60be346d,nq,2.606764793395996,retrieved,Shaun,False,False,False,10833
+triviaqa:sfq_16842,triviaqa,5.228912353515625,retrieved,Sandy Powell.,True,False,True,10760
+triviaqa:bb_6908,triviaqa,2.468198299407959,retrieved,Blood sausage.,False,False,False,14388
+nq:297c906414d3,nq,0.3790639638900757,retrieved,Arjuna Award.,False,False,False,4759
+hotpotqa:5ac3983a554299657fa290f5,hotpotqa,4.1647491455078125,retrieved,385,False,False,False,1879
+triviaqa:sfq_6398,triviaqa,0.3030247688293457,retrieved,Melpomene.,True,False,True,13722
+popqa:1752851,popqa,2.889953374862671,retrieved,Genre art.,False,False,False,1
+hotpotqa:5a7bfcec5542990527d5543d,hotpotqa,0.204697847366333,retrieved,Marcus Licinius Crassus.,False,False,False,8655
+nq:a966b3e3c425,nq,3.1508688926696777,retrieved,Paul Young,False,False,False,8970

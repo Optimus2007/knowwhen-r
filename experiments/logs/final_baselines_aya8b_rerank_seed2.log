@@ -1,0 +1,34 @@
+in_domain
+without_nq
+without_triviaqa
+without_hotpotqa
+without_popqa
+            fold        candidate     baseline    n  delta  ci_low  ci_high
+       in_domain        pre_probe        p_yes 3968  0.196   0.173    0.218
+       in_domain activation_probe    agree_top 3968  0.114   0.099    0.131
+       in_domain activation_probe agree_greedy 3968  0.118   0.103    0.136
+      without_nq        pre_probe        p_yes 1000  0.151   0.106    0.197
+      without_nq activation_probe    agree_top 1000  0.062   0.027    0.099
+      without_nq activation_probe agree_greedy 1000  0.075   0.037    0.113
+without_triviaqa        pre_probe        p_yes  968  0.172   0.131    0.212
+without_triviaqa activation_probe    agree_top  968  0.112   0.083    0.141
+without_triviaqa activation_probe agree_greedy  968  0.111   0.083    0.140
+without_hotpotqa        pre_probe        p_yes 1000  0.189   0.137    0.240
+without_hotpotqa activation_probe    agree_top 1000  0.046   0.005    0.088
+without_hotpotqa activation_probe agree_greedy 1000  0.038  -0.003    0.077
+   without_popqa        pre_probe        p_yes 1000  0.107   0.062    0.152
+   without_popqa activation_probe    agree_top 1000  0.092   0.059    0.123
+   without_popqa activation_probe agree_greedy 1000  0.104   0.070    0.138
+fold              in_domain  without_hotpotqa  without_nq  without_popqa  without_triviaqa
+method                                                                                    
+activation_probe      0.852             0.746       0.779          0.870             0.868
+agree_greedy          0.734             0.709       0.705          0.767             0.756
+agree_top             0.738             0.701       0.717          0.778             0.756
+p_yes                 0.610             0.565       0.580          0.686             0.608
+pre_probe             0.806             0.754       0.731          0.792             0.780
+          method    n  pooled_auroc
+       pre_probe 3968         0.834
+           p_yes 3968         0.664
+activation_probe 3968         0.875
+    agree_greedy 3968         0.749
+       agree_top 3968         0.752

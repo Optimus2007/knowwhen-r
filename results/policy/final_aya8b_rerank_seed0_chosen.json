@@ -1,0 +1,117 @@
+{
+ "in_domain": {
+  "p0": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.0001,
+   "val_macro_auroc": 0.8508015318402836
+  },
+  "p_before": {
+   "position": "pre",
+   "layer": 20,
+   "layer_index": 9,
+   "c": 0.0001,
+   "val_macro_auroc": 0.7391219046818243
+  },
+  "p_after": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.871932460616266
+  }
+ },
+ "without_nq": {
+  "p0": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8743205038547609
+  },
+  "p_before": {
+   "position": "pre",
+   "layer": 20,
+   "layer_index": 9,
+   "c": 0.0001,
+   "val_macro_auroc": 0.7606459947703833
+  },
+  "p_after": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8920502501551221
+  }
+ },
+ "without_triviaqa": {
+  "p0": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.0001,
+   "val_macro_auroc": 0.8435543317303197
+  },
+  "p_before": {
+   "position": "pre",
+   "layer": 20,
+   "layer_index": 9,
+   "c": 0.001,
+   "val_macro_auroc": 0.744853100974209
+  },
+  "p_after": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8624788746492845
+  }
+ },
+ "without_hotpotqa": {
+  "p0": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8490397228120518
+  },
+  "p_before": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.0001,
+   "val_macro_auroc": 0.7272403094061555
+  },
+  "p_after": {
+   "position": "mean",
+   "layer": 20,
+   "layer_index": 9,
+   "c": 0.001,
+   "val_macro_auroc": 0.8696356312884003
+  }
+ },
+ "without_popqa": {
+  "p0": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.0001,
+   "val_macro_auroc": 0.8380639865363587
+  },
+  "p_before": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.0001,
+   "val_macro_auroc": 0.7356521438462315
+  },
+  "p_after": {
+   "position": "mean",
+   "layer": 16,
+   "layer_index": 7,
+   "c": 0.001,
+   "val_macro_auroc": 0.8640070417364393
+  }
+ }
+}

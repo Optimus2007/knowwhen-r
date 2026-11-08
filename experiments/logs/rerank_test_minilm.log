@@ -1,0 +1,9 @@
+W1106 00:02:48.171000 50234 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+0 53 pairs/s
+100 167 pairs/s
+200 179 pairs/s
+all 300 {'bm25_3': np.float64(0.377), 'bm25_5': np.float64(0.413), 'rerank_3': np.float64(0.543), 'rerank_5': np.float64(0.573), 'pool': np.float64(0.677)}
+popqa 77 {'bm25_3': np.float64(0.442), 'bm25_5': np.float64(0.519), 'rerank_3': np.float64(0.688), 'rerank_5': np.float64(0.727), 'pool': np.float64(0.831)}
+triviaqa 82 {'bm25_3': np.float64(0.415), 'bm25_5': np.float64(0.451), 'rerank_3': np.float64(0.634), 'rerank_5': np.float64(0.659), 'pool': np.float64(0.756)}
+hotpotqa 84 {'bm25_3': np.float64(0.345), 'bm25_5': np.float64(0.369), 'rerank_3': np.float64(0.417), 'rerank_5': np.float64(0.429), 'pool': np.float64(0.548)}
+nq 57 {'bm25_3': np.float64(0.281), 'bm25_5': np.float64(0.281), 'rerank_3': np.float64(0.404), 'rerank_5': np.float64(0.456), 'pool': np.float64(0.544)}
