@@ -93,6 +93,22 @@ pip install -r demo/requirements.txt && python demo/app.py
 
 Use a separate environment, because Gradio 5 needs pandas below version 3.
 
+## Credits and references
+
+This project builds on other people's work, and the full reference list is at the end of `reports/report.pdf`.
+
+**Where the hypotheses came from.** Testing on held out datasets (H1) follows Orgad et al. 2024, who found that error detectors often fail to transfer across datasets, and Kamath, Jia and Liang 2020 on abstention under domain shift. Pricing errors, abstentions and retrieval (H2) follows Chow's reject rule (1970) and selective classification (Geifman and El-Yaniv 2017). Retrieving only when needed (H3) follows Mallen et al. 2022, and the token statistics control follows Moskvoretskii et al. 2025, who found simple uncertainty signals hard to beat for adaptive retrieval.
+
+**Methods.** Probing hidden states for errors: Azaria and Mitchell 2023, Kossen et al. 2024, Orgad et al. 2024, Lee, Seo and Lim 2026. Probing before any answer: Moreno Cencerrado et al. 2025. Temperature scaling: Guo et al. 2017. P(Yes) self rating: Kadavath et al. 2022. Sampling agreement: Manakul, Liusie and Gales 2023 (SelfCheckGPT). Retrieval decided from internal state: SeaKR, CtrlA, Probing RAG, SABER and Query Level Uncertainty (Chen et al. 2026). BM25: Robertson and Zaragoza 2009. MinHash: Broder 1997. Answer normalization: the SQuAD script (Rajpurkar et al. 2016). Bootstrap: Efron 1979. Holm correction: Holm 1979. Circuit method attempted: EAP IG (Hanna, Pezzelle and Belinkov 2024).
+
+**Data.** NQ Open (Kwiatkowski et al. 2019; Lee, Chang and Toutanova 2019), TriviaQA (Joshi et al. 2017), HotpotQA (Yang et al. 2018), PopQA (Mallen et al. 2022), MKQA (Longpre, Lu and Daiber 2021), the English Wikipedia dump of 1 November 2023 (`wikimedia/wikipedia`), and MS MARCO (Bajaj et al. 2016) through the reranker.
+
+**Models.** Tiny Aya Global (Salamanca et al. 2026) and Aya Expanse 8B (Dang et al. 2024) from Cohere Labs, and the reranker `cross-encoder/ms-marco-MiniLM-L-6-v2`.
+
+**Toolkits.** From Lexsi Labs: [CuratorKIT](https://github.com/Lexsi-Labs/CuratorKIT) (Bhattacharjee et al. 2026), [SafeTune](https://github.com/Lexsi-Labs/SafeTune) (Seth et al. 2026), [AuditKIT](https://github.com/Lexsi-Labs/AuditKIT) (Arora et al. 2026) and [CircuitKIT](https://github.com/Lexsi-Labs/CircuitKIT) (Seth et al. 2026). Open source: PyTorch, Hugging Face Transformers, Accelerate, Datasets and Hub, Sentence Transformers, scikit-learn, [Tantivy](https://github.com/quickwit-oss/tantivy), NumPy, SciPy, pandas and Matplotlib.
+
+**Compute.** Free Kaggle T4 GPUs, with the Aya weights from Cohere Labs' Kaggle Models pages, checked against the Hugging Face revision. Hosting on the Hugging Face Hub.
+
 ## Licences
 
 Code is under the MIT licence. Tiny Aya and Aya Expanse are CC BY NC 4.0, so probes and model outputs are for noncommercial use. Dataset licences are listed in `docs/dataset_selection.md`.

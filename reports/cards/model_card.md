@@ -42,3 +42,7 @@ def score(h):  # h: hidden state at p["hidden_state"], averaged over answer toke
 ```
 
 The prompts the probes expect are in `src/knowwhen/models/prompts.py` in the code repository. A different prompt changes the hidden states, so scores would no longer be calibrated.
+
+## Credits
+
+The probes read hidden states of Tiny Aya Global (Salamanca et al. 2026, arXiv 2603.11510) and Aya Expanse 8B (Dang et al. 2024, arXiv 2412.04261) from Cohere Labs. They were trained on NQ Open (Kwiatkowski et al. 2019; Lee, Chang and Toutanova 2019), TriviaQA (Joshi et al. 2017), HotpotQA (Yang et al. 2018) and PopQA (Mallen et al. 2022). The method follows earlier probing work (Azaria and Mitchell 2023; Kossen et al. 2024; Orgad et al. 2024) and uses temperature scaling (Guo et al. 2017), fitted with scikit-learn. Data cleaning used CuratorKIT, the live test used SafeTune and replay used AuditKIT, all from Lexsi Labs. The full reference list is in the report in the code repository.

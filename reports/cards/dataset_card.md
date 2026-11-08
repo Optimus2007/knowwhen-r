@@ -39,3 +39,5 @@ Each line in `runs/*/closed.jsonl` and `rag.jsonl` has the question id, the answ
 Sources and licences: NQ Open (CC BY SA 3.0), TriviaQA (Apache 2.0), HotpotQA (CC BY SA 4.0), PopQA (MIT, from the authors' repository), MKQA (CC BY SA 3.0), Wikipedia (CC BY SA 3.0 and GFDL). Model outputs come from Tiny Aya Global and Aya Expanse 8B under CC BY NC 4.0, so noncommercial use only. Each part keeps the terms of its source.
 
 Labels come from matching gold aliases after normalization. An LLM based label audit of 180 answers found no false positives among 41 labelled correct and 3 to 6% disputable among 139 labelled wrong. Tiny Aya sampling stopped at a time limit, so some rows have no samples.
+
+Credits: the question sets above are from Kwiatkowski et al. 2019 and Lee, Chang and Toutanova 2019 (NQ Open), Joshi et al. 2017 (TriviaQA), Yang et al. 2018 (HotpotQA), Mallen et al. 2022 (PopQA) and Longpre, Lu and Daiber 2021 (MKQA). Passages are from the Wikimedia English Wikipedia dump of 1 November 2023, reranked with `cross-encoder/ms-marco-MiniLM-L-6-v2`, trained on MS MARCO (Bajaj et al. 2016). The full reference list is in the report in the code repository.

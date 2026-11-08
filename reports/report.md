@@ -14,6 +14,8 @@ We read that last sentence as the success test. A system that abstains on nearly
 
 We asked three questions. Do probes keep working on a dataset they never saw (H1)? Does a decision rule that prices errors and retrieval beat fixed thresholds (H2)? Can we get fewer wrong answers without retrieving for every question (H3)?
 
+Each question came from earlier work. H1 came from Orgad et al. (2024), who found that error detectors trained on one dataset often fail on another, and from Kamath, Jia and Liang (2020), who studied abstention in question answering under domain shift. We used leave one dataset out tests because of them. H2 came from the reject option in Chow (1970) and the risk and coverage framing of selective classification in Geifman and El-Yaniv (2017): if errors, abstentions and retrieval have prices, the best rule follows from calibrated probabilities rather than from a hand tuned threshold. H3 came from Mallen et al. (2022), who showed that retrieval helps most on less popular facts and proposed retrieving only when needed, and from Moskvoretskii et al. (2025), who found that simple uncertainty signals are strong baselines for adaptive retrieval. That last result is why token statistics go through the same pipeline as a control.
+
 ## 2. Main result
 
 Table 1 is the before and after on the 3,968 test questions, with every system set to answer exactly the same share of questions. Figure 1 shows the full curves.
@@ -36,17 +38,17 @@ This should not be oversold. At 70% answered, 41% of Tiny Aya's answers and 33% 
 
 ## 3. Setup
 
-**Models.** Tiny Aya Global (3.35B) is the main model and Aya Expanse 8B is the replication. Both are frozen. We chose a small multilingual model because it is the kind of model that gets deployed where a large one is too expensive, and it is the one that most needs to know when it does not know.
+**Models.** Tiny Aya Global (3.35B; Salamanca et al., 2026) is the main model and Aya Expanse 8B (Dang et al., 2024) is the replication, both released by Cohere Labs. Both are frozen. We chose a small multilingual model because it is the kind of model that gets deployed where a large one is too expensive, and it is the one that most needs to know when it does not know.
 
-**Data.** NQ Open, TriviaQA, HotpotQA and PopQA, 16,320 questions after cleaning: 9,954 train, 2,398 validation and 3,968 test. They have gold answers that do not depend on another model's opinion, and they differ enough for one to be held out. HotpotQA adds multi hop questions, and PopQA adds long tail facts with popularity data. We did not use TruthfulQA, HaluEval or RAGTruth, because their labels describe other models' outputs or free form misconceptions. CuratorKIT's exact and MinHash deduplicators ran over all datasets together with test items placed first, so a near duplicate was always removed from training rather than from test. Of 72,089 candidates, 65,774 survived, and we then sampled from those.
+**Data.** NQ Open (Kwiatkowski et al., 2019; Lee, Chang and Toutanova, 2019), TriviaQA (Joshi et al., 2017), HotpotQA (Yang et al., 2018) and PopQA (Mallen et al., 2022), loaded from the Hugging Face Hub, 16,320 questions after cleaning: 9,954 train, 2,398 validation and 3,968 test. They have gold answers that do not depend on another model's opinion, and they differ enough for one to be held out. HotpotQA adds multi hop questions, and PopQA adds long tail facts with popularity data. We did not use TruthfulQA, HaluEval or RAGTruth, because their labels describe other models' outputs or free form misconceptions. CuratorKIT's exact and MinHash (Broder, 1997) deduplicators ran over all datasets together with test items placed first, so a near duplicate was always removed from training rather than from test. Of 72,089 candidates, 65,774 survived, and we then sampled from those.
 
-**Labels.** An answer is correct if a gold alias appears as a whole token span after normalization. A refusal counts as an abstention. An LLM based label audit of 180 train and validation answers, which was not a human audit, found no false positives among 41 labelled correct and 3 to 6% disputable among 139 labelled wrong. Measured accuracy is therefore slightly pessimistic.
+**Labels.** An answer is correct if a gold alias appears as a whole token span after normalization in the style of the SQuAD evaluation script (Rajpurkar et al., 2016). A refusal counts as an abstention. An LLM based label audit of 180 train and validation answers, which was not a human audit, found no false positives among 41 labelled correct and 3 to 6% disputable among 139 labelled wrong. Measured accuracy is therefore slightly pessimistic.
 
-**Retrieval.** Keyword search over English Wikipedia (the 20231101 dump), then a cross encoder (`ms-marco-MiniLM-L-6-v2`) reranks the top 100, and the best three passages go into the prompt.
+**Retrieval.** BM25 keyword search (Robertson and Zaragoza, 2009) with the Tantivy library over English Wikipedia (the 20231101 dump from `wikimedia/wikipedia` on the Hugging Face Hub), then a cross encoder (`cross-encoder/ms-marco-MiniLM-L-6-v2`, trained on MS MARCO by Bajaj et al., 2016, and run with Sentence Transformers, Reimers and Gurevych, 2019) reranks the top 100, and the best three passages go into the prompt.
 
-**Probes.** L2 logistic regression on standardized hidden states with temperature scaling. Layer, token position (last prompt token, last answer token, or mean over answer tokens) and regularization are chosen on validation rows inside each fold. Lee, Seo and Lim (2026) also find L2 logistic regression hard to beat, which matches what we saw when we tried fancier probes (section 4.3).
+**Probes.** L2 logistic regression on standardized hidden states with temperature scaling (Guo et al., 2017). Layer, token position (last prompt token, last answer token, or mean over answer tokens) and regularization are chosen on validation rows inside each fold. Lee, Seo and Lim (2026) also find L2 logistic regression hard to beat, which matches what we saw when we tried fancier probes (section 4.3).
 
-**System.** Three probes share the work. One estimates whether the closed book answer is right. One reads the closed book pass and forecasts whether a retrieved answer would be right. One reads the retrieved answer and judges it. A question goes to retrieval when the forecast beats the closed book estimate, and the answer is withheld if confidence in it falls below a cut. For the utility tests, a value policy replaces the cut with expected value under stated costs: correct +1, wrong -2, abstain 0, retrieval -0.1, swept over wrong costs of 1, 2 and 4 and retrieval costs of 0.05, 0.1 and 0.2.
+**System.** Three probes share the work. One estimates whether the closed book answer is right. One reads the closed book pass and forecasts whether a retrieved answer would be right. One reads the retrieved answer and judges it. A question goes to retrieval when the forecast beats the closed book estimate, and the answer is withheld if confidence in it falls below a cut. For the utility tests, a value policy in the spirit of Chow's reject rule replaces the cut with expected value under stated costs: correct +1, wrong -2, abstain 0, retrieval -0.1, swept over wrong costs of 1, 2 and 4 and retrieval costs of 0.05, 0.1 and 0.2.
 
 **Discipline.** The analysis plan, including every late change, is in `docs/analysis_plan.md`. Probes never saw test rows. The configuration was frozen in writing before the test split was first used, and it was run once. Two things did change after development. We moved the coverage result to the front, because that is what the problem statement asks for, and we say so here: the original primary test was utility. And some checks in section 8 were added after the test run, and are labelled.
 
@@ -58,7 +60,7 @@ This section is the honest history. Everything here is also in `docs/progress_lo
 
 **Decoding.** Generation on the Mac was far slower than expected. We tested two explanations first, the generation wrapper and the attention mask, and both were wrong. The real cause was that Cohere’s chat template adds a 361 token preamble to every prompt. Caching that preamble once gave a 3.8 times speedup, and a float32 test showed the outputs matched to rounding error.
 
-**Retrieval index.** Our first index used SQLite full text search and took 14 to 107 seconds per query, which was unusable for 16,000 questions. We rebuilt it with Tantivy, which brought the median to 0.06 seconds.
+**Retrieval index.** Our first index used SQLite full text search and took 14 to 107 seconds per query, which was unusable for 16,000 questions. We rebuilt it with [Tantivy](https://github.com/quickwit-oss/tantivy), which brought the median to 0.06 seconds.
 
 **Compute.** A MacBook Air with 16 GB could not generate for both models in time. The 8B model was not practical there, and even Tiny Aya with retrieval started thrashing memory at batch 16. We moved generation to free Kaggle T4 pairs. The first 8B run with retrieval ran out of GPU memory after 6,784 rows, so the runner now splits a batch when it runs out of memory. In total the runs used about 7.5 hours of a T4 pair, not counting failed runs.
 
@@ -88,15 +90,15 @@ This section is the honest history. Everything here is also in `docs/progress_lo
 
 **Seeds as replication.** We planned three probe seeds. They gave identical numbers, because the logistic fit is deterministic. We do not count them as replication, and we added a training subset check instead (section 8).
 
-**Circuit analysis.** We tried CircuitKIT’s edge attribution patching on pairs of prompts with a helpful or misleading passage, to find components involved in using retrieved evidence. It was too slow on the Mac, and it ran out of GPU memory four times on a Kaggle T4 pair, even at batch 1, with shorter passages, with MLP only scope and with weight gradients switched off. We never found the cause, so there are no circuit results, and the four failed logs are kept.
+**Circuit analysis.** We tried CircuitKIT’s edge attribution patching with integrated gradients (Hanna, Pezzelle and Belinkov, 2024) on pairs of prompts with a helpful or misleading passage, to find components involved in using retrieved evidence. It was too slow on the Mac, and it ran out of GPU memory four times on a Kaggle T4 pair, even at batch 1, with shorter passages, with MLP only scope and with weight gradients switched off. We never found the cause, so there are no circuit results, and the four failed logs are kept.
 
 ## 5. Why these metrics
 
-Wrong answer rate at fixed coverage is the problem statement in numbers. Macro AUROC, computed within each dataset and averaged, stops a probe getting credit for merely telling easy datasets from hard ones, which matters because activations predict dataset source with 92 to 95% accuracy. ECE and Brier show whether probabilities can be trusted as probabilities. Utility shows how a system does when errors and retrieval have prices. Intervals are 2,000 resamples over questions, paired between systems.
+Wrong answer rate at fixed coverage is the problem statement in numbers. Macro AUROC, computed within each dataset and averaged, stops a probe getting credit for merely telling easy datasets from hard ones, which matters because activations predict dataset source with 92 to 95% accuracy. ECE and Brier show whether probabilities can be trusted as probabilities. Utility shows how a system does when errors and retrieval have prices. Intervals are 2,000 bootstrap resamples over questions (Efron, 1979), paired between systems.
 
 ## 6. Results
 
-**Confirmatory tests.** Six tests per model were fixed before the test run, using the planned validation cut and Holm correction. Nine of twelve were confirmed, marked ✓ below.
+**Confirmatory tests.** Six tests per model were fixed before the test run, using the planned validation cut and Holm (1979) correction. Nine of twelve were confirmed, marked ✓ below.
 
 | Table 2: routing minus rival, points of wrong answers | Tiny 70% | Tiny 90% | 8B 70% | 8B 90% |
 |---|---|---|---|---|
@@ -129,7 +131,7 @@ In domain ECE for the probes is about 0.02. For retrieved answers on unseen data
 
 **H3, retrieval efficiency.** Supported in a narrow sense. Routing retrieves for 85% of questions on Tiny Aya and 72% on the 8B model, with slightly fewer wrong answers than always retrieving at equal coverage in domain (0.9 to 2.7 points). On unseen datasets that accuracy edge mostly disappears, with only 8B on NQ clearly ahead at 70%, and retrieval rises as high as 95%. On a matched comparison without abstention, Tiny Aya matched always retrieving on correct answers with 85% retrieval, while on the 8B model the cut chosen on validation fell slightly short on test (46.0% against 46.5% correct at 48% retrieval). Mallen et al. (2022) note that small models need retrieval nearly always, and that is what we see. Most of the wrong answer reduction comes from retrieval plus the probe on the retrieved answer, not from the routing step.
 
-**Baselines.** A probe on the last prompt token, before any answer exists, beats P(Yes) self rating on all folds: 0.839 against 0.580 on Tiny Aya and 0.806 against 0.610 on the 8B model. P(Yes) stands in for the prompted confidence of Query Level Uncertainty (Chen et al., 2026), though it is not their exact method. After generation, the activation probe beats agreement across five samples in domain (by 0.073 and 0.114 on shared rows) with no extra generation. On unseen datasets it is clearly ahead on four of four for the 8B model and two of four for Tiny Aya, and the rest are inconclusive. Tiny Aya's samples stopped at a time limit, so its comparison covers 3,618 of 3,968 rows.
+**Baselines.** A probe on the last prompt token, before any answer exists, beats P(Yes) self rating (Kadavath et al., 2022) on all folds: 0.839 against 0.580 on Tiny Aya and 0.806 against 0.610 on the 8B model. P(Yes) stands in for the prompted confidence of Query Level Uncertainty (Chen et al., 2026), though it is not their exact method. Moreno Cencerrado et al. (2025) also probe the question before any answer, which supports this design. After generation, the activation probe beats agreement across five samples, a sampling consistency check in the spirit of SelfCheckGPT (Manakul, Liusie and Gales, 2023), in domain (by 0.073 and 0.114 on shared rows) with no extra generation. On unseen datasets it is clearly ahead on four of four for the 8B model and two of four for Tiny Aya, and the rest are inconclusive. Tiny Aya's samples stopped at a time limit, so its comparison covers 3,618 of 3,968 rows.
 
 | Table 4: ablations, in domain, 70% answered unless noted | Tiny Aya | Aya 8B |
 |---|---|---|
@@ -185,11 +187,13 @@ On both models the probe's AUROC stays within 0.035 of English in every language
 
 ## 9. Toolkits
 
-CuratorKIT (Bhattacharjee et al. 2026) cleans the data, SafeTune's guard runs the probe at inference, and AuditKIT replays every decision independently. CircuitKIT was attempted and did not fit in memory, as described in section 4.3.
+All four toolkits are from Lexsi Labs. CuratorKIT (Bhattacharjee et al. 2026) cleans the data, SafeTune's guard (Seth et al. 2026a) runs the probe at inference, and AuditKIT (Arora et al. 2026) replays every decision independently. CircuitKIT (Seth et al. 2026b) was attempted and did not fit in memory, as described in section 4.3.
+
+The rest of the stack is open source: PyTorch (Paszke et al., 2019), Hugging Face Transformers (Wolf et al., 2020), Accelerate and Datasets for models and data, scikit-learn (Pedregosa et al., 2011) for the probes, Sentence Transformers for reranking, Tantivy for search, and NumPy, SciPy, pandas and Matplotlib for analysis. Generation ran on free Kaggle T4 GPUs, using the copies of the Aya weights that Cohere Labs publishes on Kaggle Models, and the probes, traces and demo are hosted on the Hugging Face Hub.
 
 ## 10. Related work and what is new here
 
-Predicting errors from activations is well established (Azaria and Mitchell 2023; Kossen et al. 2024; Orgad et al. 2024), and so is using internal state to trigger retrieval (Yao et al. 2024; Liu et al. 2024; Baek et al. 2024). SABER (arXiv 2605.18792) is the closest work: it uses hidden state probes to trust the parametric answer, trust the retrieved answer or abstain, with leave one dataset out tests, but it assumes context is already supplied, so it does not address whether to retrieve. Query Level Uncertainty (Chen et al. 2026) decides on RAG before generation using a training free signal, without pricing retrieval or abstaining. We did not run SABER and compare on design only. Sengupta, Seth and Sankarapu (2025) argue that internal understanding should be part of how an aligned system is built, not only a diagnostic run afterwards. A probe that makes the answer, retrieve or abstain decision at inference time is one small, concrete case of that.
+Predicting errors from activations is well established (Azaria and Mitchell 2023; Kossen et al. 2024; Orgad et al. 2024), and so is using internal state to trigger retrieval (Yao et al. 2024; Liu et al. 2024; Baek et al. 2024). SABER (arXiv 2605.18792) is the closest work: it uses hidden state probes to trust the parametric answer, trust the retrieved answer or abstain, with leave one dataset out tests, but it assumes context is already supplied, so it does not address whether to retrieve. Query Level Uncertainty (Chen et al. 2026) decides on RAG before generation using a training free signal, without pricing retrieval or abstaining. Moskvoretskii et al. (2025) compare many uncertainty methods for adaptive retrieval and find simple ones hard to beat. Kadavath et al. (2022) showed that models can partly predict whether they know an answer, and Kamath, Jia and Liang (2020) studied when a question answering model should abstain under domain shift. We did not run SABER and compare on design only. Sengupta, Seth and Sankarapu (2025) argue that internal understanding should be part of how an aligned system is built, not only a diagnostic run afterwards. A probe that makes the answer, retrieve or abstain decision at inference time is one small, concrete case of that.
 
 Among the papers we read, we did not find one that combines a trained activation forecast of how the retrieved answer would do, a priced retrieval decision, a second decision after retrieval, and wrong answer rates at fixed coverage with token statistics put through the same pipeline as a control. Our search was limited, and this is an integration and measurement contribution, not a new probing method. The finding we would most want others to check is that the advantage of activations over token statistics shows up mainly after retrieval.
 
@@ -203,4 +207,60 @@ See the README. Every number here traces to a CSV in `results/` and a log named 
 
 ## References
 
-Azaria and Mitchell 2023, arXiv 2304.13734. Baek et al. 2024, Probing-RAG, arXiv 2410.13339. Bhattacharjee et al. 2026, CuratorKIT, arXiv 2606.21631. Chen, de Melo, Suchanek and Varoquaux 2026, Query-Level Uncertainty, ICLR 2026, arXiv 2506.09669. Kossen et al. 2024, Semantic Entropy Probes, arXiv 2406.15927. Lee, Seo and Lim 2026, The Hallucination Signal Is a Mean Shift, arXiv 2608.28930. Liu et al. 2024, CtrlA, arXiv 2405.18727. Longpre, Lu and Daiber 2021, MKQA, TACL, arXiv 2007.15207. Mallen et al. 2022, arXiv 2212.10511. Orgad et al. 2024, arXiv 2410.02707. SABER, Trust or Abstain? A Self-Aware RAG Approach, arXiv 2605.18792. Sengupta, Seth and Sankarapu 2025, Interpretability as Alignment, arXiv 2509.08592. Yao et al. 2024, SeaKR, arXiv 2406.19215.
+
+**Ideas, methods and related work**
+
+- Azaria and Mitchell (2023). The internal state of an LLM knows when it's lying. arXiv 2304.13734.
+- Baek et al. (2024). Probing-RAG. arXiv 2410.13339.
+- Broder (1997). On the resemblance and containment of documents. Compression and Complexity of Sequences.
+- Chen, de Melo, Suchanek and Varoquaux (2026). Query-Level Uncertainty. ICLR 2026, arXiv 2506.09669.
+- Chow (1970). On optimum recognition error and reject tradeoff. IEEE Transactions on Information Theory 16(1).
+- Efron (1979). Bootstrap methods: another look at the jackknife. Annals of Statistics 7(1).
+- Geifman and El-Yaniv (2017). Selective classification for deep neural networks. NeurIPS, arXiv 1705.08500.
+- Guo, Pleiss, Sun and Weinberger (2017). On calibration of modern neural networks. ICML, arXiv 1706.04599.
+- Hanna, Pezzelle and Belinkov (2024). Have faith in faithfulness. arXiv 2403.17806.
+- Holm (1979). A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics 6(2).
+- Kadavath et al. (2022). Language models (mostly) know what they know. arXiv 2207.05221.
+- Kamath, Jia and Liang (2020). Selective question answering under domain shift. ACL, arXiv 2006.09462.
+- Kossen et al. (2024). Semantic Entropy Probes. arXiv 2406.15927.
+- Lee, Seo and Lim (2026). The Hallucination Signal Is a Mean Shift. arXiv 2608.28930.
+- Liu et al. (2024). CtrlA. arXiv 2405.18727.
+- Manakul, Liusie and Gales (2023). SelfCheckGPT. EMNLP, arXiv 2303.08896.
+- Mallen et al. (2022). When not to trust language models. ACL 2023, arXiv 2212.10511.
+- Moreno Cencerrado et al. (2025). No answer needed: predicting LLM answer accuracy from question only linear probes. arXiv 2509.10625.
+- Moskvoretskii et al. (2025). Adaptive retrieval without self knowledge? arXiv 2501.12835.
+- Orgad et al. (2024). LLMs know more than they show. arXiv 2410.02707.
+- Robertson and Zaragoza (2009). The probabilistic relevance framework: BM25 and beyond. Foundations and Trends in Information Retrieval 3(4).
+- SABER (2026). Trust or Abstain? A Self-Aware RAG Approach. arXiv 2605.18792.
+- Sengupta, Seth and Sankarapu (2025). Interpretability as Alignment. arXiv 2509.08592.
+- Yao et al. (2024). SeaKR. arXiv 2406.19215.
+
+**Datasets and retrieval data**
+
+- Bajaj et al. (2016). MS MARCO. arXiv 1611.09268. Training data of the reranker.
+- Joshi, Choi, Weld and Zettlemoyer (2017). TriviaQA. ACL, arXiv 1705.03551.
+- Kwiatkowski et al. (2019). Natural Questions: a benchmark for question answering research. TACL.
+- Lee, Chang and Toutanova (2019). Latent retrieval for weakly supervised open domain question answering. ACL, arXiv 1906.00300. The NQ Open split.
+- Longpre, Lu and Daiber (2021). MKQA. TACL, arXiv 2007.15207.
+- Mallen et al. (2022), above, for PopQA.
+- Rajpurkar, Zhang, Lopyrev and Liang (2016). SQuAD. EMNLP, arXiv 1606.05250. Answer normalization.
+- Yang et al. (2018). HotpotQA. EMNLP, arXiv 1809.09600.
+- Wikimedia Foundation. English Wikipedia dump of 1 November 2023, `wikimedia/wikipedia` on the Hugging Face Hub, CC BY SA.
+
+**Models**
+
+- Dang et al. (2024). Aya Expanse. arXiv 2412.04261. Weights: `CohereLabs/aya-expanse-8b`, CC BY NC 4.0.
+- Salamanca et al. (2026). Tiny Aya: Bridging Scale and Multilingual Depth. arXiv 2603.11510. Weights: `CohereLabs/tiny-aya-global`, CC BY NC 4.0.
+- Reranker: `cross-encoder/ms-marco-MiniLM-L-6-v2` on the Hugging Face Hub.
+
+**Toolkits and software**
+
+- Arora, Avaiya, Lyngkhoi, Kadiyala, Gosalia, Sankarapu and Seth (2026). AuditKIT. Software, <https://github.com/Lexsi-Labs/AuditKIT>.
+- Bhattacharjee, Sharma, Sankarapu and Seth (2026). CuratorKIT. arXiv 2606.21631, <https://github.com/Lexsi-Labs/CuratorKIT>.
+- Seth, Sadhu, Kaushal and Sankarapu (2026a). SafeTune. EMNLP 2026 System Demonstrations, <https://github.com/Lexsi-Labs/SafeTune>.
+- Seth, Gosalia, Kasliwal and Sankarapu (2026b). CircuitKIT. Software, <https://github.com/Lexsi-Labs/CircuitKIT>.
+- Paszke et al. (2019). PyTorch. NeurIPS, arXiv 1912.01703.
+- Pedregosa et al. (2011). Scikit-learn: machine learning in Python. JMLR 12.
+- Reimers and Gurevych (2019). Sentence-BERT. EMNLP, arXiv 1908.10084.
+- Wolf et al. (2020). Transformers: state of the art natural language processing. EMNLP System Demonstrations, arXiv 1910.03771.
+- Tantivy, <https://github.com/quickwit-oss/tantivy>.
