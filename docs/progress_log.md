@@ -81,3 +81,7 @@ Multilingual transfer (E029). Kaggle would not hand the HF token to two runs, so
 Publishing prepared, all private. Hugging Face: model repo kungfupanda12/knowwhen-r-probes (eight probes, about 0.3 MB), dataset repo kungfupanda12/knowwhen-r-traces (answers, Parquet predictions, splits, passages, results, logs and figures, about 200 MB), two collections, and a Space. Gradio Spaces now need a paid plan, so the public demo is a static page (demo_static) built from the same traces; its numbers match the Gradio demo and the report. HF Article draft in reports/hf_article.md. Form answers kept locally in submission/, not committed.
 
 Made public on 8 November: GitHub repository, Hugging Face probes, traces, Space and both collections, none gated. Every link returned HTTP 200 without signing in. Remaining: post the Article and submit the form.
+
+## 2026-11-08, credits
+
+Added where each hypothesis came from (section 1 of the report), inline citations for every method, dataset, model, toolkit and library used, and a grouped reference list. Added a credits section to the README and both Hugging Face cards, rebuilt the PDF (12 pages) and regenerated the HF article text.
